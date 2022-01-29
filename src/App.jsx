@@ -1,23 +1,16 @@
 import React, { Suspense } from 'react';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
 
+import Navigation from './components/Navigation/Navigation';
 import Portfolio from './views/Portfolio';
-import Home from './views/Home';
+import Home from './views/Home/Home';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <nav className="App-bar">
-        <Link to="/">
-          <button>Home</button>
-        </Link>
-        <Link to="/portfolio">
-          <button>Portfolio</button>
-        </Link>
-      </nav>
-
+      <Navigation />
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<Home />} />
