@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const FrontPage = styled.div`
   display: flex;
   justify-content: space-between;
+  text-align: center;
   @media (max-width: 766px) {
     flex-direction: column;
   }
@@ -22,9 +23,4 @@ export const SoftSkills = styled.div`
     flex-direction: row;
     justify-content: space-around;
   }
-`;
-
-export const Summary = styled.div`
-  margin: 0 auto;
-  max-width: 200px;
 `;

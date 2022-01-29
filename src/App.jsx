@@ -7,7 +7,7 @@ import Home from './views/Home/Home';
 
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Navigation />
@@ -19,6 +19,6 @@ function App() {
       </Suspense>
     </div>
   );
-}
+};
 
 export default App;
