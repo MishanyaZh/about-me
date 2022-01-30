@@ -24,3 +24,11 @@ export const SoftSkills = styled.div`
     justify-content: space-around;
   }
 `;
+
+export const DownPage = styled.div`
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 766px) {
+    flex-direction: column;
+  }
+`;

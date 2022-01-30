@@ -3,10 +3,21 @@ import { Link } from 'react-router-dom';
 
 import MainInfo from '../../components/MainInfo/MainInfo';
 import SkillsList from '../../components/SkillsList/SkilsList';
-import Education from '../../components/Education/Education';
 
-import { FrontPage, TechnicalSkills, SoftSkills } from './Home.styled';
-import { TECHNICAL_SKILLS, SOFT_SKILLS, LANGUAGES } from '../../Skills/Skills';
+import {
+  FrontPage,
+  TechnicalSkills,
+  SoftSkills,
+  DownPage,
+} from './Home.styled';
+import {
+  TECHNICAL_SKILLS,
+  SOFT_SKILLS,
+  LANGUAGES,
+  EDUCATION,
+  WORK_EXPERIENCE,
+} from '../../Skills/Skills';
+
 const Home = () => {
   return (
     <div>
@@ -21,7 +32,14 @@ const Home = () => {
         </SoftSkills>
       </FrontPage>
       <Link to="/portfolio">Portfolio</Link>
-      <Education />
+      <DownPage>
+        <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
+        <SkillsList
+          SKILLS={WORK_EXPERIENCE}
+          title={'WORK EXPERIENCE'}
+          type="DownPage"
+        />
+      </DownPage>
     </div>
   );
 };

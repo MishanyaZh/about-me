@@ -1,5 +1,16 @@
 .App {
+  background-color: cornsilk;
   /* text-align: center; */
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: blue;
+  cursor: pointer;
+  border: 1px solid blue;
 }
 
 .App-logo {
@@ -35,14 +46,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.Navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  color: blue;
-  cursor: pointer;
-  border: 1px solid blue;
 }
