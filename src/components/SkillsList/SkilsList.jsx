@@ -1,3 +1,4 @@
+import React from 'react';
 const SkillsList = ({ SKILLS, title, type }) => {
   return (
     <div>

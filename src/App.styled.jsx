@@ -6,4 +6,5 @@ export const AppBox = styled.div`
       ? 'var(--color-light-theme)'
       : 'var(--color-dark-theme)'};
   color: ${props => (props.theme === false ? 'black' : 'green')};
+  height: 100%;
 `;

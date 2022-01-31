@@ -2,7 +2,7 @@ import React, { Suspense, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
-import Portfolio from './views/Portfolio';
+import Portfolio from './views/Portfolio/Portfolio';
 import Home from './views/Home/Home';
 
 import { AppBox } from './App.styled';

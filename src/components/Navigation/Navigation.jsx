@@ -17,7 +17,7 @@ const Navigation = ({ handleChangeTheme }) => {
       <NavLink to="/portfolio">
         <button>Portfolio</button>
       </NavLink>
-      <ToggleButton type="che" onChange={handleChangeTheme} />
+      <ToggleButton onChange={handleChangeTheme} />
     </Nav>
   );
 };
