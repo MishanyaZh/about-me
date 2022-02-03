@@ -4,10 +4,16 @@ export const FrontPage = styled.div`
   display: flex;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
 
   @media (max-width: 766px) {
     flex-direction: column;
   }
+`;
+
+export const PortfolioButton = styled.button`
+  display: block;
+  margin: 0 auto;
 `;
 
 export const TechnicalSkills = styled.div`
@@ -26,9 +32,20 @@ export const SoftSkills = styled.div`
   }
 `;
 
+export const EducationSkills = styled.div`
+  padding: 10px;
+  flex: 1;
+`;
+export const ExperienceSkills = styled.div`
+  padding: 10px;
+  flex: 1;
+`;
+
 export const DownPage = styled.div`
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+
   @media (max-width: 766px) {
     flex-direction: column;
   }

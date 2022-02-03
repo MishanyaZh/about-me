@@ -9,6 +9,9 @@ import {
   TechnicalSkills,
   SoftSkills,
   DownPage,
+  EducationSkills,
+  ExperienceSkills,
+  PortfolioButton,
 } from './Home.styled';
 import {
   TECHNICAL_SKILLS,
@@ -31,14 +34,20 @@ const Home = () => {
           <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} />
         </SoftSkills>
       </FrontPage>
-      <Link to="/portfolio">Portfolio</Link>
+      <PortfolioButton>
+        <Link to="/portfolio">Portfolio</Link>
+      </PortfolioButton>
       <DownPage>
-        <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
-        <SkillsList
-          SKILLS={WORK_EXPERIENCE}
-          title={'WORK EXPERIENCE'}
-          type="DownPage"
-        />
+        <ExperienceSkills>
+          <SkillsList
+            SKILLS={WORK_EXPERIENCE}
+            title={'WORK EXPERIENCE'}
+            type="DownPage"
+          />
+        </ExperienceSkills>
+        <EducationSkills>
+          <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
+        </EducationSkills>
       </DownPage>
     </div>
   );
