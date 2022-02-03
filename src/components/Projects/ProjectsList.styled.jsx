@@ -12,6 +12,9 @@ export const Item = styled.li`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  margin-bottom: 15px;
+
   height: 200px;
   width: 250px;
   border: 1px solid red;
