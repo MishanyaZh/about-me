@@ -2,8 +2,9 @@ import styled from '@emotion/styled';
 
 export const FrontPage = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
+
   @media (max-width: 766px) {
     flex-direction: column;
   }
