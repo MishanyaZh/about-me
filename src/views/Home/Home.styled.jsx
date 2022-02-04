@@ -33,10 +33,12 @@ export const SoftSkills = styled.div`
 `;
 
 export const EducationSkills = styled.div`
+  max-width: 500px;
   padding: 10px;
   flex: 1;
 `;
 export const ExperienceSkills = styled.div`
+  max-width: 500px;
   padding: 10px;
   flex: 1;
 `;

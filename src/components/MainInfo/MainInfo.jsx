@@ -3,7 +3,6 @@ import foto from '../../images/about-me-foto.jpg';
 import { Summary, Img } from './MainInfo.styled';
 
 const MainInfo = () => {
-  console.log(foto);
   return (
     <div>
       <h1>Mykhailo Zholondkovskyi</h1>

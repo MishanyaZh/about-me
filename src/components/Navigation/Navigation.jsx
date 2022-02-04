@@ -1,7 +1,8 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import ToggleButton from 'react-theme-toggle-button';
 import 'react-theme-toggle-button/dist/index.css';
+import ToggleButton from 'react-theme-toggle-button';
 
 import { Nav } from './Navigation.styled';
 

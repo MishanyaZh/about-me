@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
@@ -9,13 +9,38 @@ import { AppBox } from './App.styled';
 // import './App.css';
 
 const App = () => {
-  const [theme, setTheme] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+  const [checked, setChecked] = useState(false);
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
 
-  const handleChangeTheme = () => {
-    setTheme(prevTheme => !prevTheme);
+    if (theme === 'dark') {
+      setIsDark(true);
+    }
+
+    if (theme === 'light') {
+      setIsDark(false);
+      setChecked(false);
+    }
+  }, []);
+
+  const handleChangeTheme = InputEvent => {
+    const isChecked = InputEvent.target.checked;
+    console.log(isChecked);
+
+    setIsDark(prevIsDark => !prevIsDark);
+    setChecked(InputEvent.target.checked);
+
+    if (InputEvent.target.checked === false) {
+      localStorage.setItem('theme', 'light');
+    }
+    if (InputEvent.target.checked === true) {
+      localStorage.setItem('theme', 'dark');
+    }
   };
+
   return (
-    <AppBox theme={theme}>
+    <AppBox theme={isDark}>
       <Navigation handleChangeTheme={handleChangeTheme} />
       <Suspense fallback={null}>
         <Routes>
