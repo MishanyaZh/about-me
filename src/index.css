@@ -1,6 +1,25 @@
 :root {
-  --color-light-theme: rgb(239, 245, 245);
-  --color-dark-theme: rgb(12, 12, 12);
+  --color-theme: rgb(239, 245, 245);
+  --text-color: rgba(0, 0, 0, 1);
+  --box-shadow-tab-wrrap: 0px 10px 60px rgba(170, 178, 197, 0.2);
+  --box-shadow-mob-wrrap: 5px 10px 20px rgba(170, 178, 197, 0.4);
+}
+
+html[data-theme='light'] {
+  --color-theme: rgb(239, 245, 245);
+
+  --text-color: rgba(0, 0, 0, 1);
+
+  --box-shadow-tab-wrrap: 0px 10px 60px rgba(170, 178, 197, 0.2);
+  --box-shadow-mob-wrrap: 5px 10px 20px rgba(170, 178, 197, 0.4);
+}
+
+html[data-theme='dark'] {
+  --color-theme: rgb(12, 12, 12);
+  --text-color: rgb(0, 199, 199);
+
+  --box-shadow-tab-wrrap: 0px 10px 60px rgba(0, 62, 248, 0.2);
+  --box-shadow-mob-wrrap: 5px 10px 20px rgba(0, 63, 252, 0.4);
 }
 
 body {

@@ -15,11 +15,13 @@ const App = () => {
     if (theme === 'dark') {
       setIsDark(true);
       document.documentElement.querySelector('label>input').checked = true;
+      document.documentElement.setAttribute('data-theme', 'dark');
     }
 
     if (theme === 'light') {
       setIsDark(false);
       document.documentElement.querySelector('label>input').checked = false;
+      document.documentElement.setAttribute('data-theme', 'light');
     }
   }, [isDark, setIsDark]);
 
@@ -28,16 +30,14 @@ const App = () => {
 
     if (InputEvent.target.checked === false) {
       localStorage.setItem('theme', 'light');
-      localStorage.setItem('checked', 'light');
     }
     if (InputEvent.target.checked === true) {
       localStorage.setItem('theme', 'dark');
-      localStorage.setItem('checked', 'dark');
     }
   };
 
   return (
-    <AppBox theme={isDark}>
+    <AppBox>
       <Navigation isDark={isDark} onChange={onChange} />
       <Suspense fallback={null}>
         <Routes>
