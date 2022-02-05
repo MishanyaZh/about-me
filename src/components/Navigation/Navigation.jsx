@@ -6,7 +6,7 @@ import ToggleButton from 'react-theme-toggle-button';
 
 import { Nav } from './Navigation.styled';
 
-const Navigation = ({ handleChangeTheme }) => {
+const Navigation = ({ onChange, isDark }) => {
   return (
     <Nav className="Navigation">
       <NavLink to="/">
@@ -18,7 +18,7 @@ const Navigation = ({ handleChangeTheme }) => {
       <NavLink to="/portfolio">
         <button>Portfolio</button>
       </NavLink>
-      <ToggleButton onChange={handleChangeTheme} />
+      <ToggleButton isDark={isDark} onChange={onChange} />
     </Nav>
   );
 };
