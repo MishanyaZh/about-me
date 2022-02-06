@@ -8,4 +8,6 @@ export const Summary = styled.div`
 export const Img = styled.img`
   width: 250px;
   margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-wrrap-1);
 `;
