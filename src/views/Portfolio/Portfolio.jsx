@@ -6,9 +6,9 @@ import ProjectsList from '../../components/Projects/ProjectsList';
 const Portfolio = () => {
   return (
     <main>
-      <Link to="/">Home</Link>
       <h2>Portfolio</h2>
       <ProjectsList PROJECTS={PROJECTS} />
+      <Link to="/">Home</Link>
     </main>
   );
 };

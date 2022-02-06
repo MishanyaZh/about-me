@@ -44,6 +44,7 @@ const Navigation = () => {
       <NavLink to="/portfolio">
         <button>Portfolio</button>
       </NavLink>
+      <a href="#footer">CONTACTS</a>
       <ToggleButton onChange={onChange} />
     </Nav>
   );

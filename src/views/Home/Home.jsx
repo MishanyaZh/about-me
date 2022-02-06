@@ -23,7 +23,7 @@ import {
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <FrontPage>
         <MainInfo />
         <TechnicalSkills>
@@ -49,7 +49,7 @@ const Home = () => {
           <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
         </EducationSkills>
       </DownPage>
-    </div>
+    </main>
   );
 };
 

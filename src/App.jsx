@@ -2,8 +2,9 @@ import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
-import Portfolio from './views/Portfolio/Portfolio';
 import Home from './views/Home/Home';
+import Portfolio from './views/Portfolio/Portfolio';
+import Footer from './components/Footer/Footer';
 
 import { AppBox } from './App.styled';
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="portfolio" element={<Portfolio />} />
         </Routes>
       </Suspense>
+      <Footer />
     </AppBox>
   );
 };
