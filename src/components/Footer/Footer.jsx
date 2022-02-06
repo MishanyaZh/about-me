@@ -1,15 +1,15 @@
 import React from 'react';
+import { FooterContacts, Contacts } from './Footer.styled';
 
 const Footer = () => {
   return (
-    <footer id="footer">
-      <div>
+    <FooterContacts id="footer">
+      <Contacts>
         <a href="tel: +48 573 995 682">+48 573 995 682</a>
-        <br />
         <a href="mailto:zholondkovskyimykhailo@gmail.com">
           zholondkovskyimykhailo@gmail.com
         </a>
-      </div>
+      </Contacts>
 
       <div>
         <a
@@ -37,7 +37,7 @@ const Footer = () => {
           Gorzow Wielkopolski
         </a>
       </div>
-    </footer>
+    </FooterContacts>
   );
 };
 
