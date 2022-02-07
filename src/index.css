@@ -1,12 +1,12 @@
 :root {
-  --color-theme: rgb(239, 245, 245);
+  --color-theme: rgb(212, 245, 245);
   --text-color: rgba(0, 0, 0, 1);
   --box-shadow-wrrap-1: 0px 10px 60px rgba(10, 2, 44, 0.2);
   --box-shadow-wrrap-2: 5px 10px 20px rgba(170, 178, 197, 0.4);
 }
 
 html[data-theme='light'] {
-  --color-theme: rgb(239, 245, 245);
+  --color-theme: rgb(212, 245, 245);
 
   --text-color: rgba(0, 0, 0, 1);
 
