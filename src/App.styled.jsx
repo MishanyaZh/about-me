@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const AppBox = styled.div`
-  background: var(--color-theme);
+  /* height: 100hv; */
+  /* background: var(--color-theme);
   color: var(--text-color);
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; */
 `;

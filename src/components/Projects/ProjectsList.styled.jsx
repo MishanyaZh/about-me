@@ -17,5 +17,6 @@ export const Item = styled.li`
 
   height: 200px;
   width: 250px;
-  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-wrrap-2);
 `;

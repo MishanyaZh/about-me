@@ -11,8 +11,11 @@ const MainInfo = () => {
         <Img src={foto} alt="about-me-foto" />
       </div>
       <Summary>
-        I am fast learner and can quickly integrate into a team so I can provide
-        value to the company and the customers.
+        I want to be part of a friendly and professional team in which I could
+        develop my skills as a Front End Developer. I have knowledge of HTML,
+        CSS, JavaScript, React, and Node. I am fast learner and can quickly
+        integrate into a team so I can provide value to the company and the
+        customers.
       </Summary>
     </div>
   );
