@@ -7,7 +7,8 @@ export const FooterContacts = styled.footer`
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-wrrap-2);
+  background: var(--color-theme-card);
+  box-shadow: var(--box-shadow-wrrap-1);
   @media (max-width: 766px) {
     flex-direction: column;
     align-items: center;

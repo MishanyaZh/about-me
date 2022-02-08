@@ -1,10 +1,10 @@
 import React from 'react';
 import foto from '../../images/about-me-foto.jpg';
-import { Summary, Img } from './MainInfo.styled';
+import { MainInfoBox, Summary, Img } from './MainInfo.styled';
 
 const MainInfo = () => {
   return (
-    <div>
+    <MainInfoBox>
       <h1>Mykhailo Zholondkovskyi</h1>
       <h2>junior Full Stack Developer</h2>
       <div>
@@ -17,7 +17,7 @@ const MainInfo = () => {
         integrate into a team so I can provide value to the company and the
         customers.
       </Summary>
-    </div>
+    </MainInfoBox>
   );
 };
 export default MainInfo;

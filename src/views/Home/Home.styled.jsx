@@ -14,14 +14,19 @@ export const FrontPage = styled.div`
 export const PortfolioButton = styled.button`
   display: block;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export const TechnicalSkills = styled.div`
   order: -1;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
+  background: var(--color-theme-card);
   @media (max-width: 766px) {
     order: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -29,10 +34,12 @@ export const SoftSkills = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
   @media (max-width: 766px) {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 10px;
   }
 `;
 
@@ -42,6 +49,7 @@ export const EducationSkills = styled.div`
   flex: 1;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
+  background: var(--color-theme-card);
 `;
 export const ExperienceSkills = styled.div`
   max-width: 500px;
@@ -49,12 +57,21 @@ export const ExperienceSkills = styled.div`
   flex: 1;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
+  background: var(--color-theme-card);
+  @media (max-width: 766px) {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    margin-right: 10px;
+  }
 `;
 
 export const DownPage = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+  margin-right: 10px;
+  margin-left: 10px;
 
   @media (max-width: 766px) {
     flex-direction: column;

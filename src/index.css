@@ -1,5 +1,6 @@
 :root {
   --color-theme: rgb(212, 245, 245);
+  --color-theme-card: rgb(196, 245, 245);
   --text-color: rgba(0, 0, 0, 1);
   --box-shadow-wrrap-1: 0px 10px 60px rgba(10, 2, 44, 0.2);
   --box-shadow-wrrap-2: 5px 10px 20px rgba(170, 178, 197, 0.4);
@@ -7,7 +8,7 @@
 
 html[data-theme='light'] {
   --color-theme: rgb(212, 245, 245);
-
+  --color-theme-card: rgb(196, 245, 245);
   --text-color: rgba(0, 0, 0, 1);
 
   --box-shadow-wrrap-1: 0px 10px 60px rgba(10, 2, 44, 0.2);
@@ -16,6 +17,7 @@ html[data-theme='light'] {
 
 html[data-theme='dark'] {
   --color-theme: rgb(27, 27, 27);
+  --color-theme-card: rgb(22, 11, 11);
   --text-color: rgb(63, 199, 0);
 
   --box-shadow-wrrap-1: 0px 10px 60px rgba(0, 62, 248, 0.2);

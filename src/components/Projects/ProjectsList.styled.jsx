@@ -4,6 +4,8 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 export const Item = styled.li`
@@ -19,4 +21,5 @@ export const Item = styled.li`
   width: 250px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-2);
+  background: var(--color-theme-card);
 `;
