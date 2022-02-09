@@ -21,8 +21,11 @@ export const PortfolioButton = styled.button`
 export const TechnicalSkills = styled.div`
   order: -1;
   border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
   box-shadow: var(--box-shadow-wrrap-1);
   background: var(--color-theme-card);
+
   @media (max-width: 766px) {
     order: 0;
     margin-top: 10px;
@@ -33,7 +36,10 @@ export const TechnicalSkills = styled.div`
 export const SoftSkills = styled.div`
   display: flex;
   flex-direction: column;
+
+  padding: 10px;
   border-radius: 5px;
+  text-transform: uppercase;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
   @media (max-width: 766px) {
