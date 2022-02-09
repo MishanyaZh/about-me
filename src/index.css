@@ -1,23 +1,23 @@
 :root {
-  --color-theme: rgb(212, 245, 245);
+  --color-theme: rgb(106, 123, 143);
   --text-color: rgba(0, 0, 0, 1);
 
-  --color-theme-card: rgb(126, 196, 196);
+  --color-theme-card: rgb(117, 123, 138);
   --hover-theme-card: rgb(60, 101, 177);
 
-  --box-shadow-wrrap-1: 0px 10px 60px rgba(10, 2, 44, 0.2);
-  --box-shadow-wrrap-2: 5px 10px 20px rgba(37, 39, 46, 0.4);
+  --box-shadow-wrrap-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
+  --box-shadow-wrrap-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
 }
 
 html[data-theme='light'] {
-  --color-theme: rgb(212, 245, 245);
+  --color-theme: rgb(106, 123, 143);
   --text-color: rgba(0, 0, 0, 1);
 
-  --color-theme-card: rgb(126, 196, 196);
+  --color-theme-card: rgb(117, 123, 138);
   --hover-theme-card: rgb(60, 101, 177);
 
-  --box-shadow-wrrap-1: 0px 10px 60px rgba(10, 2, 44, 0.2);
-  --box-shadow-wrrap-2: 5px 10px 20px rgba(37, 39, 46, 0.4);
+  --box-shadow-wrrap-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
+  --box-shadow-wrrap-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
 }
 
 html[data-theme='dark'] {

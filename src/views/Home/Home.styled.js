@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const FrontPage = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
 
@@ -42,8 +42,9 @@ export const SoftSkills = styled.div`
   text-transform: uppercase;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
+
   @media (max-width: 766px) {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-around;
     margin-bottom: 10px;
   }
@@ -81,5 +82,6 @@ export const DownPage = styled.div`
 
   @media (max-width: 766px) {
     flex-direction: column;
+    align-items: center;
   }
 `;

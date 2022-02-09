@@ -4,7 +4,7 @@ export const FooterContacts = styled.footer`
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
-  margin-bottom: 10px;
+
   padding: 10px;
   border-radius: 5px;
   background: var(--color-theme-card);

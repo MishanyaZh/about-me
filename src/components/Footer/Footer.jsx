@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
         <br />
         <a
-          href="www.linkedin.com/in/m-zholondkovskyi"
+          href="http://www.linkedin.com/in/m-zholondkovskyi"
           target="_blank"
           rel="noreferrer"
         >
