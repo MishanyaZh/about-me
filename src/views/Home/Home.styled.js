@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { NavLink } from 'react-router-dom';
 
 export const FrontPage = styled.div`
   display: flex;
@@ -16,6 +17,21 @@ export const PortfolioButton = styled.button`
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  padding: 10px 10px;
+
+  color: var(--text-acc);
+  background: var(--hover-theme-card);
+
+  border: 1px solid var(--text-acc);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const NavLinkStyled = styled(NavLink)`
+  text-decoration: none;
+  color: var(--text-acc);
 `;
 
 export const TechnicalSkills = styled.div`

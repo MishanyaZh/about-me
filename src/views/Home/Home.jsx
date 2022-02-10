@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link, NavLink } from 'react-router-dom';
 
 import MainInfo from '../../components/MainInfo/MainInfo';
 import SkillsList from '../../components/SkillsList/SkilsList';
@@ -12,6 +12,7 @@ import {
   EducationSkills,
   ExperienceSkills,
   PortfolioButton,
+  NavLinkStyled,
 } from './Home.styled';
 import {
   TECHNICAL_SKILLS,
@@ -34,9 +35,9 @@ const Home = () => {
           <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} />
         </SoftSkills>
       </FrontPage>
-      <PortfolioButton>
-        <Link to="/portfolio">Portfolio</Link>
-      </PortfolioButton>
+      <NavLinkStyled color="green" to="/portfolio">
+        <PortfolioButton>Portfolio</PortfolioButton>
+      </NavLinkStyled>
       <DownPage>
         <ExperienceSkills>
           <SkillsList

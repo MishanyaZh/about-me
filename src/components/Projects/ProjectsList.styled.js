@@ -9,6 +9,9 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  position: relative;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,13 +25,34 @@ export const Item = styled.li`
   max-width: 250px;
   border-radius: 5px;
 
-  cursor: pointer;
   box-shadow: var(--box-shadow-wrrap-2);
   background: var(--color-theme-card);
 
-  &:hover {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 0%;
+    padding-top: 0%;
+    transform: translate(-50%, -50%);
     background: var(--hover-theme-card);
-    transition: all 0.5s ease-out;
+    transition: 0.5s ease padding-top, 0.5s ease width;
+  }
+
+  &:hover {
+    &:before {
+      width: 150%;
+      padding-top: 150%;
+    }
+
+    & Button {
+      border: 1px solid var(--text-acc);
+      background: var(--color-theme-card);
+      transition: all 0.5s ease-out;
+    }
   }
 
   @media (min-width: 550px) {
@@ -41,4 +65,33 @@ export const Item = styled.li`
   @media (min-width: 1024px) {
     flex-basis: calc((100% - 80px) / 4);
   }
+`;
+
+export const Link = styled.a`
+  text-decoration: none;
+  color: var(--text-acc);
+`;
+
+export const Button = styled.button`
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 10px 10px;
+
+  color: var(--text-acc);
+  background: var(--hover-theme-card);
+
+  border: 1px solid var(--hover-theme-card);
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+export const Span = styled.span`
+  position: relative;
+`;
+export const TitleCard = styled.h3`
+  position: relative;
 `;

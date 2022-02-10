@@ -1,16 +1,38 @@
 import React from 'react';
 
-import { Item, List } from './ProjectsList.styled';
+import {
+  Item,
+  List,
+  Link,
+  Button,
+  Span,
+  TitleCard,
+} from './ProjectsList.styled';
 const ProjectsList = ({ PROJECTS }) => {
   return (
     <List>
       {PROJECTS.map((item, index) => (
         <Item key={index}>
-          <a href={item.link} alt="kapusta" target="_blank" rel="noreferrer">
-            <h3>{item.subtitle}</h3>
-          </a>
-          <span>{item.technologies}</span>
-          <span>{item.description}</span>
+          <Link
+            href={item.link}
+            alt={item.subtitle}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TitleCard>{item.subtitle}</TitleCard>
+          </Link>
+
+          <Span>{item.technologies}</Span>
+          <Span>{item.description}</Span>
+
+          <Link
+            href={item.link}
+            alt={item.subtitle}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button>Open</Button>
+          </Link>
         </Item>
       ))}
     </List>
