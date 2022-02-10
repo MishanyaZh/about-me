@@ -35,7 +35,7 @@ const Home = () => {
           <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} />
         </SoftSkills>
       </FrontPage>
-      <NavLinkStyled color="green" to="/portfolio">
+      <NavLinkStyled to="/portfolio">
         <PortfolioButton>Portfolio</PortfolioButton>
       </NavLinkStyled>
       <DownPage>
