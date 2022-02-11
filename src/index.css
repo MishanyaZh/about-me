@@ -70,3 +70,11 @@ h4,
 h5 {
   margin: 0;
 }
+
+.active {
+  border: 1px solid var(--text-acc);
+  box-shadow: var(--box-shadow-wrrap-2);
+  transform: scale(1.1);
+  background: var(--hover-theme-card);
+  color: var(--text-acc);
+}

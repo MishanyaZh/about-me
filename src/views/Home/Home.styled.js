@@ -28,14 +28,12 @@ export const PortfolioButton = styled.button`
   text-decoration: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  :focus,
+  :active {
     box-shadow: var(--box-shadow-wrrap-2);
     transform: scale(1.1);
   }
-  /* &:after {
-    box-shadow: var(--box-shadow-wrrap-2);
-    transform: scale(1.1);
-  } */
 `;
 
 export const NavLinkStyled = styled(NavLink)`

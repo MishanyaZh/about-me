@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { NavLinkStyled, PortfolioButton } from '../../views/Home/Home.styled';
+import { NavigtionNavLink } from './Navigation.styled';
 
 import 'react-theme-toggle-button/dist/index.css';
 import ToggleButton from 'react-theme-toggle-button';
@@ -37,21 +37,11 @@ const Navigation = () => {
 
   return (
     <Nav className="Navigation">
-      <NavLink to="/">
-        <p>logo</p>
-      </NavLink>
-      <NavLinkStyled to="/">
-        <PortfolioButton>Home</PortfolioButton>
-      </NavLinkStyled>
-      <NavLinkStyled to="/portfolio">
-        <PortfolioButton active={false}>Portfolio</PortfolioButton>
-      </NavLinkStyled>
-      {/* <NavLink to="/">
-        <button>Home</button>
-      </NavLink>
-      <NavLink to="/portfolio">
-        <button>Portfolio</button>
-      </NavLink> */}
+      <p>MENU</p>
+
+      <NavigtionNavLink to="/">Home</NavigtionNavLink>
+      <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
+
       <a href="#footer">CONTACTS</a>
       <ToggleButton onChange={onChange} />
     </Nav>
