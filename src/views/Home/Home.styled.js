@@ -20,10 +20,11 @@ export const PortfolioButton = styled.button`
 
   padding: 10px 10px;
 
-  color: var(--text-acc);
-  background: var(--hover-theme-card);
+  color: var(--text-color);
+  background: var(--color-theme-card);
 
-  border: 1px solid var(--text-acc);
+  border: 1px solid var(--text-color);
+  box-shadow: var(--box-shadow-wrrap-1);
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
@@ -31,14 +32,16 @@ export const PortfolioButton = styled.button`
   &:hover,
   :focus,
   :active {
+    background: var(--hover-theme-card);
     box-shadow: var(--box-shadow-wrrap-2);
+    border: 1px solid var(--text-acc);
     transform: scale(1.1);
+    color: var(--text-acc);
   }
 `;
 
 export const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
-  color: var(--text-acc);
 `;
 
 export const TechnicalSkills = styled.div`

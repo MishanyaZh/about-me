@@ -1,15 +1,15 @@
 import React from 'react';
 import foto from '../../images/about-me-foto.jpg';
-import { MainInfoBox, Summary, Img } from './MainInfo.styled';
+import { MainInfoBox, Summary, Img, ImgBox } from './MainInfo.styled';
 
 const MainInfo = () => {
   return (
     <MainInfoBox>
       <h1>Mykhailo Zholondkovskyi</h1>
       <h2>junior Full Stack Developer</h2>
-      <div>
+      <ImgBox>
         <Img src={foto} alt="about-me-foto" />
-      </div>
+      </ImgBox>
       <Summary>
         I want to be part of a friendly and professional team in which I could
         develop my skills as a Front End Developer. I have knowledge of HTML,

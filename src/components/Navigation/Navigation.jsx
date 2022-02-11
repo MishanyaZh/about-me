@@ -1,12 +1,9 @@
 import React, { useState, useLayoutEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-
-import { NavigtionNavLink } from './Navigation.styled';
-
 import 'react-theme-toggle-button/dist/index.css';
 import ToggleButton from 'react-theme-toggle-button';
 
-import { Nav } from './Navigation.styled';
+import { NavigtionNavLink, Nav, ContactLink } from './Navigation.styled';
+// import { Nav } from './Navigation.styled';
 
 const Navigation = () => {
   const [isDark, setIsDark] = useState(false);
@@ -42,7 +39,7 @@ const Navigation = () => {
       <NavigtionNavLink to="/">Home</NavigtionNavLink>
       <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
 
-      <a href="#footer">CONTACTS</a>
+      <ContactLink href="#footer">Contacts</ContactLink>
       <ToggleButton onChange={onChange} />
     </Nav>
   );

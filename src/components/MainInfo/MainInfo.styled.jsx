@@ -21,11 +21,18 @@ export const Summary = styled.div`
   }
 `;
 
+export const ImgBox = styled.div``;
+
 export const Img = styled.img`
   width: 250px;
-  height: auto;
+  height: 325px;
   margin: 0 auto;
   margin-top: 10px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
+  transition: all 0.5s ease-out;
+  &:hover {
+    transition: all 0.5s ease-out;
+    transform: scale(1.3);
+  }
 `;
