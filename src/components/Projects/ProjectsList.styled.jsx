@@ -20,11 +20,9 @@ export const Item = styled.li`
   flex-basis: calc((100% - 30px) / 1);
 
   margin-bottom: 15px;
-
   height: 200px;
   max-width: 250px;
   border-radius: 5px;
-
   box-shadow: var(--box-shadow-wrrap-2);
   background: var(--color-theme-card);
 
@@ -53,6 +51,10 @@ export const Item = styled.li`
       background: var(--color-theme-card);
       transition: all 0.5s ease-out;
     }
+    & Span {
+      color: var(--text-color);
+      transition: all 0.5s ease-out;
+    }
   }
 
   @media (min-width: 550px) {
@@ -74,24 +76,34 @@ export const Link = styled.a`
 
 export const Button = styled.button`
   position: relative;
+
   display: inline-block;
   text-align: center;
   font-size: 16px;
   margin-top: 5px;
   padding: 10px 10px;
-
-  color: var(--text-acc);
-  background: var(--hover-theme-card);
-
-  border: 1px solid var(--hover-theme-card);
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  color: var(--text-acc);
+  background: var(--hover-theme-card);
+  border: 1px solid var(--hover-theme-card);
 `;
 
 export const Span = styled.span`
   position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  height: 65px;
+  color: var(--color-theme-card);
 `;
+
+export const Technologies = styled.span`
+  position: relative;
+  color: var(--text-acc);
+`;
+
 export const TitleCard = styled.h3`
   position: relative;
 `;

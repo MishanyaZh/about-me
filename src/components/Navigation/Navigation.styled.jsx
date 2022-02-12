@@ -12,10 +12,8 @@ export const Nav = styled.nav`
 
 export const ContactLink = styled.a`
   padding: 5px 5px;
-
   color: var(--text-color);
   background: var(--color-theme-card);
-
   border: 1px solid var(--text-color);
   border-radius: 5px;
   text-decoration: none;
@@ -34,7 +32,6 @@ export const ContactLink = styled.a`
 export const NavigtionNavLink = styled(NavLink)`
   padding: 5px 5px;
   border-radius: 5px;
-
   text-decoration: none;
   background: var(--color-theme-card);
   border: 1px solid var(--text-color);

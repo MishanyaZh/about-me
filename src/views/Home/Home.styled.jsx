@@ -17,17 +17,14 @@ export const PortfolioButton = styled.button`
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-
   padding: 10px 10px;
-
-  color: var(--text-color);
-  background: var(--color-theme-card);
-
-  border: 1px solid var(--text-color);
-  box-shadow: var(--box-shadow-wrrap-1);
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  color: var(--text-color);
+  background: var(--color-theme-card);
+  border: 1px solid var(--text-color);
+  box-shadow: var(--box-shadow-wrrap-1);
 
   &:hover,
   :focus,
@@ -62,7 +59,6 @@ export const TechnicalSkills = styled.div`
 export const SoftSkills = styled.div`
   display: flex;
   flex-direction: column;
-
   padding: 10px;
   border-radius: 5px;
   text-transform: uppercase;

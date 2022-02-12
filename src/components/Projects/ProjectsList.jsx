@@ -7,7 +7,9 @@ import {
   Button,
   Span,
   TitleCard,
+  Technologies,
 } from './ProjectsList.styled';
+
 const ProjectsList = ({ PROJECTS }) => {
   return (
     <List>
@@ -22,7 +24,7 @@ const ProjectsList = ({ PROJECTS }) => {
             <TitleCard>{item.subtitle}</TitleCard>
           </Link>
 
-          <Span>{item.technologies}</Span>
+          <Technologies>{item.technologies}</Technologies>
           <Span>{item.description}</Span>
 
           <Link
