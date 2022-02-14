@@ -4,7 +4,7 @@ export const PROJECTS = [
     technologies: '[JS, React.js, Node.js]',
     link: 'https://project-smart-finance.netlify.app',
     description:
-      'Team project. My role: Theme Switch, Report View, Report List, Month Picker.',
+      'Team project. My role: Theme Switch, Report View, Report List, Month Picker. (in developing...)',
   },
   {
     subtitle: '"Filmoteka"',
@@ -21,7 +21,7 @@ export const PROJECTS = [
   },
   {
     subtitle: '"Phonebook"',
-    technologies: '[JS, React.js]',
+    technologies: '[JS, React.js, Redux]',
     link: 'https://zhm-goit-react-hw-08-phonebook.netlify.app',
     description: 'Phonebook service',
   },
@@ -54,5 +54,17 @@ export const PROJECTS = [
     technologies: '[JS, Node.js]',
     link: 'https://github.com/MishanyaZh/nodejs-homework-template-rest-api/tree/hw06-email',
     description: 'Users contact data',
+  },
+  {
+    subtitle: '"WebStudio"',
+    technologies: '[Html, CSS]',
+    link: 'https://mishanyazh.github.io/goit-markup-hw-08/',
+    description: 'IT company website',
+  },
+  {
+    subtitle: '"Dashboard"',
+    technologies: '[JS, React.js, Redux]',
+    link: 'https://zhm-dashboard.netlify.app',
+    description: 'User information panel (in the process of developing)',
   },
 ];

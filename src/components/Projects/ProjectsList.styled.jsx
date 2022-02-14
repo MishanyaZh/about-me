@@ -51,10 +51,10 @@ export const Item = styled.li`
       background: var(--color-theme-card);
       transition: all 0.5s ease-out;
     }
-    & Span {
+    /* & Span {
       color: var(--text-color);
       transition: all 0.5s ease-out;
-    }
+    } */
   }
 
   @media (min-width: 550px) {
@@ -94,9 +94,9 @@ export const Span = styled.span`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 5px 0 5px;
+  padding: 5px 5px 0 5px;
   height: 65px;
-  color: var(--color-theme-card);
+  color: var(--text-color);
 `;
 
 export const Technologies = styled.span`
