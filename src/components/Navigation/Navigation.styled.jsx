@@ -2,12 +2,18 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const Nav = styled.nav`
+  position: sticky;
+  z-index: 2;
+  top: -1px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
   border-radius: 5px;
-  box-shadow: var(--box-shadow-wrrap-1);
+  background: var(--color-theme);
+  box-shadow: var(--box-shadow-wrrap-2);
 `;
 
 export const ContactLink = styled.a`

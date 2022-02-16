@@ -25,6 +25,7 @@ const ProjectsList = ({ PROJECTS }) => {
           </Link>
 
           <Technologies>{item.technologies}</Technologies>
+
           <Link
             href={item.link}
             alt={item.subtitle}
@@ -33,6 +34,7 @@ const ProjectsList = ({ PROJECTS }) => {
           >
             <Button>Open</Button>
           </Link>
+
           <Span>{item.description}</Span>
         </Item>
       ))}

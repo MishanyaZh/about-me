@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 
 export const MainInfoBox = styled.div`
   margin: 10px;
-  padding: 10px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+
+  transition: all 0.5s ease-out;
   border-radius: 5px;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
@@ -11,7 +13,7 @@ export const MainInfoBox = styled.div`
 export const Summary = styled.div`
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
   max-width: 450px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
@@ -33,6 +35,6 @@ export const Img = styled.img`
   transition: all 0.5s ease-out;
   &:hover {
     transition: all 0.5s ease-out;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 `;

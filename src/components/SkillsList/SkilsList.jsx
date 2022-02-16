@@ -1,8 +1,11 @@
 import React from 'react';
+
+import { Title, DownPageItems, SkillList } from './SkillsList.styled';
+
 const SkillsList = ({ SKILLS, title, type }) => {
   return (
-    <ul>
-      <h3>{title}</h3>
+    <SkillList>
+      <Title>{title}</Title>
       {type !== 'DownPage' &&
         SKILLS.map((item, index) => (
           <li key={index}>
@@ -11,7 +14,7 @@ const SkillsList = ({ SKILLS, title, type }) => {
         ))}
       {type === 'DownPage' &&
         SKILLS.map((item, index) => (
-          <li key={index}>
+          <DownPageItems key={index}>
             <h5>{item.subtitle}</h5>
             <span>{item.date}</span>
             <ul>
@@ -19,9 +22,9 @@ const SkillsList = ({ SKILLS, title, type }) => {
                 <li key={index}>{skill}</li>
               ))}
             </ul>
-          </li>
+          </DownPageItems>
         ))}
-    </ul>
+    </SkillList>
   );
 };
 

@@ -14,7 +14,6 @@ export const CustomizedLocationOnIcon = styled(LocationOnIcon)`
 `;
 export const CustomizedEmailIcon = styled(EmailIcon)`
   margin-right: 5px;
-  /* margin-bottom: 5px; */
   color: currentColor;
   :hover {
     color: currentColor;
@@ -49,6 +48,7 @@ export const FooterContacts = styled.footer`
   margin-top: 10px;
 
   padding: 10px;
+  transition: all 0.5s ease-out;
   border-radius: 5px;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
@@ -69,7 +69,7 @@ export const SocialContacts = styled.div`
   flex-direction: row;
 `;
 
-export const Linkontacts = styled.a`
+export const LinkContacts = styled.a`
   display: flex;
   align-items: center;
   margin-bottom: 5px;

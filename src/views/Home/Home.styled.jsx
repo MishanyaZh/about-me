@@ -6,6 +6,7 @@ export const FrontPage = styled.div`
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
+  margin: 0 5px 0 5px;
 
   @media (max-width: 766px) {
     flex-direction: column;
@@ -16,11 +17,13 @@ export const PortfolioButton = styled.button`
   display: block;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 10px 10px;
   border-radius: 5px;
+
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s ease-out;
   color: var(--text-color);
   background: var(--color-theme-card);
   border: 1px solid var(--text-color);
@@ -29,6 +32,7 @@ export const PortfolioButton = styled.button`
   &:hover,
   :focus,
   :active {
+    transition: all 0.5s ease-out;
     background: var(--hover-theme-card);
     box-shadow: var(--box-shadow-wrrap-2);
     border: 1px solid var(--text-acc);
@@ -42,12 +46,14 @@ export const NavLinkStyled = styled(NavLink)`
 `;
 
 export const TechnicalSkills = styled.div`
+  min-width: 195px;
   order: -1;
   border-radius: 5px;
   padding: 10px;
   text-transform: uppercase;
   box-shadow: var(--box-shadow-wrrap-1);
   background: var(--color-theme-card);
+  transition: all 0.5s ease-out;
 
   @media (max-width: 766px) {
     order: 0;
@@ -57,10 +63,15 @@ export const TechnicalSkills = styled.div`
 `;
 
 export const SoftSkills = styled.div`
+  min-width: 195px;
+  height: 236px;
+
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 10px;
   border-radius: 5px;
+  transition: all 0.5s ease-out;
   text-transform: uppercase;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-wrrap-1);
@@ -76,6 +87,8 @@ export const EducationSkills = styled.div`
   max-width: 500px;
   padding: 10px;
   flex: 1;
+
+  transition: all 0.5s ease-out;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
   background: var(--color-theme-card);
@@ -84,6 +97,7 @@ export const ExperienceSkills = styled.div`
   max-width: 500px;
   padding: 10px;
   flex: 1;
+  transition: all 0.5s ease-out;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
   background: var(--color-theme-card);

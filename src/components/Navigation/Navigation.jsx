@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import 'react-theme-toggle-button/dist/index.css';
-import ToggleButton from 'react-theme-toggle-button';
+import ThemeToggleButton from 'react-theme-toggle-button';
 import { NavigtionNavLink, Nav, ContactLink } from './Navigation.styled';
 
 const Navigation = () => {
@@ -33,7 +33,7 @@ const Navigation = () => {
       <NavigtionNavLink to="/">Home</NavigtionNavLink>
       <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
       <ContactLink href="#footer">Contacts</ContactLink>
-      <ToggleButton onChange={onChange} />
+      <ThemeToggleButton onChange={onChange} />
     </Nav>
   );
 };

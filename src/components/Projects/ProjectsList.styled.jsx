@@ -4,8 +4,8 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 15px 5px 0 5px;
+  /* margin-left: 5px; */
 `;
 
 export const Item = styled.li`
@@ -21,10 +21,12 @@ export const Item = styled.li`
 
   margin-bottom: 15px;
   height: 200px;
-  max-width: 250px;
+  min-width: 236px;
+  max-width: 237px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-2);
   background: var(--color-theme-card);
+  transition: all 0.5s ease-out;
 
   &:before {
     content: '';
@@ -49,6 +51,7 @@ export const Item = styled.li`
     & Button {
       border: 1px solid var(--text-acc);
       background: var(--color-theme-card);
+      color: var(--text-acc);
       transition: all 0.5s ease-out;
     }
     /* & Span {
@@ -83,11 +86,13 @@ export const Button = styled.button`
   margin-top: 5px;
   padding: 10px 10px;
   border-radius: 5px;
+
   text-decoration: none;
   cursor: pointer;
-  color: var(--text-acc);
+  transition: all 0.5s ease-out;
+  color: var(--text-color);
   background: var(--hover-theme-card);
-  border: 1px solid var(--hover-theme-card);
+  border: 1px solid var(--text-color);
 `;
 
 export const Span = styled.span`

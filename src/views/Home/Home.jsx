@@ -1,5 +1,4 @@
-import React from 'react';
-// import { Link, NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 import MainInfo from '../../components/MainInfo/MainInfo';
 import SkillsList from '../../components/SkillsList/SkilsList';
@@ -23,6 +22,10 @@ import {
 } from '../../Skills/Skills';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <FrontPage>

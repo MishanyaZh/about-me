@@ -1,14 +1,14 @@
 export const PROJECTS = [
   {
     subtitle: '"Kapu$ta"',
-    technologies: '[JS, React.js, Node.js]',
+    technologies: '[JS, React.js, Node.js, Redux]',
     link: 'https://project-smart-finance.netlify.app',
     description:
       'Team project. My role: Theme Switch, Report View, Report List, Month Picker. (in developing...)',
   },
   {
     subtitle: '"Filmoteka"',
-    technologies: '[JS]',
+    technologies: '[JS, Html, CSS]',
     link: 'https://mishanyazh.github.io/-team-project-JS-Filmoteka/',
     description:
       'Team project. My role: Create dynamic modal window, work with local storage.',

@@ -3,7 +3,7 @@ import {
   FooterContacts,
   Contacts,
   SocialContacts,
-  Linkontacts,
+  LinkContacts,
   CustomizedGitHubIcon,
   CustomizedLinkedInIcon,
   CustomizedLocalPhoneIcon,
@@ -15,18 +15,18 @@ const Footer = () => {
   return (
     <FooterContacts id="footer">
       <Contacts>
-        <Linkontacts href="tel: +48 573 995 682">
+        <LinkContacts href="tel: +48 573 995 682">
           <CustomizedLocalPhoneIcon fontSize="small" />
           <span>+48 573 995 682</span>
-        </Linkontacts>
-        <Linkontacts href="mailto:zholondkovskyimykhailo@gmail.com">
+        </LinkContacts>
+        <LinkContacts href="mailto:zholondkovskyimykhailo@gmail.com">
           <CustomizedEmailIcon fontSize="small" />
           <span>zholondkovskyimykhailo@gmail.com</span>
-        </Linkontacts>
+        </LinkContacts>
       </Contacts>
 
       <SocialContacts>
-        <Linkontacts
+        <LinkContacts
           href="https://github.com/MishanyaZh"
           target="_blank"
           rel="noreferrer"
@@ -35,8 +35,8 @@ const Footer = () => {
             sx={{ color: 'var(--text-color)' }}
             fontSize="large"
           />
-        </Linkontacts>
-        <Linkontacts
+        </LinkContacts>
+        <LinkContacts
           href="http://www.linkedin.com/in/m-zholondkovskyi"
           target="_blank"
           rel="noreferrer"
@@ -45,17 +45,18 @@ const Footer = () => {
             sx={{ color: 'var(--text-color)' }}
             fontSize="large"
           />
-        </Linkontacts>
+        </LinkContacts>
       </SocialContacts>
+
       <div>
-        <Linkontacts
+        <LinkContacts
           href="https://goo.gl/maps/bZbz9wkoaYwjsyZGA"
           target="_blank"
           rel="noreferrer"
         >
           <CustomizedLocationOnIcon />
           <span>Gorzow Wielkopolski</span>
-        </Linkontacts>
+        </LinkContacts>
       </div>
     </FooterContacts>
   );
