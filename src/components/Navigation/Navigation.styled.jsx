@@ -24,6 +24,7 @@ export const ContactLink = styled.a`
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 
   &:hover,
   :focus {
@@ -42,6 +43,7 @@ export const NavigtionNavLink = styled(NavLink)`
   background: var(--color-theme-card);
   border: 1px solid var(--text-color);
   color: var(--text-color);
+  transition: all 0.2s ease-out;
 
   &:hover,
   :focus {
