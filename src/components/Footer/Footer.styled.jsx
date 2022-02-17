@@ -45,7 +45,6 @@ export const FooterContacts = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 10px;
 
   padding: 10px;
   transition: all 0.5s ease-out;

@@ -3,9 +3,8 @@ import styled from '@emotion/styled';
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 15px 5px 0 5px;
-  /* margin-left: 5px; */
 `;
 
 export const Item = styled.li`

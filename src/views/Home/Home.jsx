@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <>
       <FrontPage>
         <MainInfo />
         <TechnicalSkills>
@@ -53,7 +53,7 @@ const Home = () => {
           <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
         </EducationSkills>
       </DownPage>
-    </main>
+    </>
   );
 };
 

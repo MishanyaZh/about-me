@@ -28,6 +28,10 @@ html[data-theme='dark'] {
   --box-shadow-wrrap-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

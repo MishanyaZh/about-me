@@ -16,7 +16,7 @@ export const FrontPage = styled.div`
 export const PortfolioButton = styled.button`
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 15px;
   padding: 10px 10px;
   border-radius: 5px;
@@ -113,8 +113,7 @@ export const DownPage = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px 10px 10px;
 
   @media (max-width: 766px) {
     flex-direction: column;
