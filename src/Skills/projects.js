@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     subtitle: '"Kapu$ta"',
-    technologies: '[JS, React.js, Node.js, Redux]',
+    technologies: '[JS, React.js, Redux]',
     link: 'https://project-smart-finance.netlify.app',
     description:
       'Team project. My role: Theme Switch, Report View, Report List, Month Picker. (in developing...)',

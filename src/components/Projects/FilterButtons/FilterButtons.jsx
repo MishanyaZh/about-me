@@ -14,9 +14,9 @@ const FilterButtons = ({ react, all, vue, node, vanilla }) => {
         >
           <Button onClick={all}>All</Button>
           <Button onClick={react}>React</Button>
+          <Button onClick={vanilla}>Vanilla</Button>
           <Button onClick={vue}>Vue</Button>
           <Button onClick={node}>Node</Button>
-          <Button onClick={vanilla}>Vanilla</Button>
         </ButtonGroup>
       </Box>
     </>

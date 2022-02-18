@@ -4,9 +4,10 @@ import ThemeToggleButton from 'react-theme-toggle-button';
 import { NavigtionNavLink, Nav, ContactLink } from './Navigation.styled';
 
 const Navigation = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true); //defolt theme = 'dark'
 
   useLayoutEffect(() => {
+    document.documentElement.querySelector('label>input').checked = true; //defolt theme = 'dark'
     const theme = localStorage.getItem('theme');
     if (theme === 'dark') {
       setIsDark(true);
@@ -33,7 +34,7 @@ const Navigation = () => {
       <NavigtionNavLink to="/">Home</NavigtionNavLink>
       <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
       <ContactLink href="#footer">Contacts</ContactLink>
-      <ThemeToggleButton onChange={onChange} />
+      <ThemeToggleButton onChange={onChange} isDark={isDark} />
     </Nav>
   );
 };
