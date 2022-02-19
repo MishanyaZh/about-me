@@ -19,7 +19,7 @@ const Portfolio = () => {
   const handlerButtonGroupSwitch = EventTarget => {
     const curentButton = EventTarget.target.name;
     if (curentButton === 'All') {
-      setFilteredProjects(PROJECTS);
+      setFilteredProjects(allProjects);
       return;
     }
     setFilteredProjects(

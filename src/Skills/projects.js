@@ -68,3 +68,5 @@ export const PROJECTS = [
     description: 'User information panel (in the process of developing)',
   },
 ];
+
+export const buttonsName = ['All', 'React', 'Vue', 'Node', 'JS', 'Html'];

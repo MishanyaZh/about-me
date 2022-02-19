@@ -1,4 +1,5 @@
 import React from 'react';
+import { buttonsName } from '../../../Skills/projects';
 import { Button, ButtonGroup, Box } from '@mui/material';
 
 const FilterButtons = ({ handlerButtonGroupSwitch }) => {
@@ -12,11 +13,11 @@ const FilterButtons = ({ handlerButtonGroupSwitch }) => {
           variant="outlined"
           aria-label="outlined button group"
         >
-          <Button name="All">All</Button>
-          <Button name="React">React</Button>
-          <Button name="Html">Vanilla</Button>
-          <Button name="Vue">Vue</Button>
-          <Button name="Node">Node</Button>
+          {buttonsName.map((button, index) => (
+            <Button key={index} name={button}>
+              {button}
+            </Button>
+          ))}
         </ButtonGroup>
       </Box>
     </>
