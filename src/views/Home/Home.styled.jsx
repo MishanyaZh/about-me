@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { NavLink } from 'react-router-dom';
 
 export const FrontPage = styled.div`
   display: flex;
@@ -13,36 +12,10 @@ export const FrontPage = styled.div`
   }
 `;
 
-export const PortfolioButton = styled.button`
-  display: block;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  padding: 10px 10px;
-  border-radius: 5px;
-
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5s ease-out;
-  color: var(--text-color);
-  background: var(--color-theme-card);
-  border: 1px solid var(--text-color);
-  box-shadow: var(--box-shadow-wrrap-1);
-
-  &:hover,
-  :focus,
-  :active {
-    transition: all 0.5s ease-out;
-    background: var(--hover-theme-card);
-    box-shadow: var(--box-shadow-wrrap-2);
-    border: 1px solid var(--text-acc);
-    transform: scale(1.1);
-    color: var(--text-acc);
-  }
-`;
-
-export const NavLinkStyled = styled(NavLink)`
-  text-decoration: none;
+export const NavLinkBox = styled.div`
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const TechnicalSkills = styled.div`
@@ -97,6 +70,7 @@ export const ExperienceSkills = styled.div`
   max-width: 500px;
   padding: 10px;
   flex: 1;
+
   transition: all 0.5s ease-out;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);

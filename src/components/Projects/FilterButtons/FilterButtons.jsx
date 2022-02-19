@@ -1,22 +1,22 @@
 import React from 'react';
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Box from '@mui/material/Box';
+import { Button, ButtonGroup, Box } from '@mui/material';
 
-const FilterButtons = ({ react, all, vue, node, vanilla }) => {
+const FilterButtons = ({ handlerButtonGroupSwitch }) => {
   return (
     <>
-      <Box>
+      <Box sx={{ textAlign: 'center' }}>
         <ButtonGroup
+          sx={{ boxShadow: 'var(--box-shadow-wrrap-2)' }}
+          onClick={handlerButtonGroupSwitch}
           size="small"
           variant="outlined"
           aria-label="outlined button group"
         >
-          <Button onClick={all}>All</Button>
-          <Button onClick={react}>React</Button>
-          <Button onClick={vanilla}>Vanilla</Button>
-          <Button onClick={vue}>Vue</Button>
-          <Button onClick={node}>Node</Button>
+          <Button name="All">All</Button>
+          <Button name="React">React</Button>
+          <Button name="Html">Vanilla</Button>
+          <Button name="Vue">Vue</Button>
+          <Button name="Node">Node</Button>
         </ButtonGroup>
       </Box>
     </>

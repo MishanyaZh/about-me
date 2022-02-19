@@ -10,9 +10,9 @@ import {
   DownPage,
   EducationSkills,
   ExperienceSkills,
-  PortfolioButton,
-  NavLinkStyled,
+  NavLinkBox,
 } from './Home.styled';
+import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
 import {
   TECHNICAL_SKILLS,
   SOFT_SKILLS,
@@ -38,9 +38,9 @@ const Home = () => {
           <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} />
         </SoftSkills>
       </FrontPage>
-      <NavLinkStyled to="/portfolio">
-        <PortfolioButton>Portfolio</PortfolioButton>
-      </NavLinkStyled>
+      <NavLinkBox>
+        <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
+      </NavLinkBox>
       <DownPage>
         <ExperienceSkills>
           <SkillsList

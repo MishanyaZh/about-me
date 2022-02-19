@@ -58,8 +58,15 @@ export const EDUCATION = [
 
 export const WORK_EXPERIENCE = [
   {
-    subtitle: 'Product operator',
-    date: '"Faurecia" | 2017 - present',
+    subtitle: 'Developer experience | Non-commercial experience',
+    date: '(January 2021 - present)',
+    skills: [
+      'I have programming experience in courses and experience in my own projects, also I have experience in team projects.',
+    ],
+  },
+  {
+    subtitle: 'Product operator | "Faurecia"',
+    date: '(2017 - present)',
     skills: [
       'Carried out Process to correct Quality and Production Standards within cycle time.',
       'Conform to and follow requirements established in Environmental Management System.',
@@ -67,8 +74,8 @@ export const WORK_EXPERIENCE = [
   },
 
   {
-    subtitle: 'Security service manager',
-    date: '"Food planet" | 2011 - 2016',
+    subtitle: 'Security service manager | "Food planet"',
+    date: '(2011 - 2016)',
     skills: [
       'Developed and enforced security protocols, policies, and procedures necessary for safeguarding lives and property.',
       'Created reports for management on security status and analyze data to form proposals for improvements.',

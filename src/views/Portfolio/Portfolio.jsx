@@ -2,56 +2,39 @@ import React, { useState, useEffect } from 'react';
 import { PROJECTS } from '../../Skills/projects';
 import FilterButtons from '../../components/Projects/FilterButtons/FilterButtons';
 import ProjectsList from '../../components/Projects/ProjectsList';
+
 import { Title } from './Portfolio.styled';
-import { PortfolioButton, NavLinkStyled } from '../Home/Home.styled';
+import { NavLinkBox } from '../Home/Home.styled';
+import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
 
 const Portfolio = () => {
-  const [filteredProjects, setFilteredProjects] = useState(PROJECTS);
+  const [allProjects, setAllProjects] = useState(PROJECTS);
+  const [filteredProjects, setFilteredProjects] = useState(allProjects);
 
   useEffect(() => {
-    setFilteredProjects(PROJECTS);
+    setAllProjects(PROJECTS);
     window.scrollTo(0, 0);
   }, []);
 
-  const hendleButtonReact = () => {
+  const handlerButtonGroupSwitch = EventTarget => {
+    const curentButton = EventTarget.target.name;
+    if (curentButton === 'All') {
+      setFilteredProjects(PROJECTS);
+      return;
+    }
     setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes('React')),
+      PROJECTS.filter(item => item.technologies.includes(curentButton)),
     );
-  };
-  const hendleButtonVue = () => {
-    setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes('Vue')),
-    );
-  };
-  const hendleButtonNode = () => {
-    setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes('Node')),
-    );
-  };
-  const hendleButtonVanilla = () => {
-    setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes('Html')),
-    );
-  };
-
-  const hendleButtonAll = () => {
-    setFilteredProjects(PROJECTS);
   };
 
   return (
     <>
       <Title>Portfolio</Title>
-      <FilterButtons
-        react={hendleButtonReact}
-        all={hendleButtonAll}
-        vue={hendleButtonVue}
-        node={hendleButtonNode}
-        vanilla={hendleButtonVanilla}
-      />
+      <FilterButtons handlerButtonGroupSwitch={handlerButtonGroupSwitch} />
       <ProjectsList PROJECTS={filteredProjects} />
-      <NavLinkStyled to="/">
-        <PortfolioButton>Home</PortfolioButton>
-      </NavLinkStyled>
+      <NavLinkBox>
+        <NavigtionNavLink to="/">Home</NavigtionNavLink>
+      </NavLinkBox>
     </>
   );
 };

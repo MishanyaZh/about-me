@@ -18,6 +18,8 @@ export const Item = styled.li`
   text-align: center;
   flex-basis: calc((100% - 30px) / 1);
 
+  margin-right: 5px;
+  margin-left: 5px;
   margin-bottom: 15px;
   height: 200px;
   min-width: 236px;
