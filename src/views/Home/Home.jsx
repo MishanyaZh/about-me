@@ -2,6 +2,13 @@ import React, { useEffect } from 'react';
 
 import MainInfo from '../../components/MainInfo/MainInfo';
 import SkillsList from '../../components/SkillsList/SkilsList';
+import {
+  TECHNICAL_SKILLS,
+  SOFT_SKILLS,
+  LANGUAGES,
+  EDUCATION,
+  WORK_EXPERIENCE,
+} from '../../Skills/Skills';
 
 import {
   FrontPage,
@@ -13,13 +20,6 @@ import {
   NavLinkBox,
 } from './Home.styled';
 import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
-import {
-  TECHNICAL_SKILLS,
-  SOFT_SKILLS,
-  LANGUAGES,
-  EDUCATION,
-  WORK_EXPERIENCE,
-} from '../../Skills/Skills';
 
 const Home = () => {
   useEffect(() => {
@@ -30,17 +30,21 @@ const Home = () => {
     <>
       <FrontPage>
         <MainInfo />
+
         <TechnicalSkills>
           <SkillsList SKILLS={TECHNICAL_SKILLS} title={'TECHNICAL SKILLS'} />
         </TechnicalSkills>
+
         <SoftSkills>
           <SkillsList SKILLS={SOFT_SKILLS} title={'SOFT SKILLS'} />
           <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} />
         </SoftSkills>
       </FrontPage>
+
       <NavLinkBox>
         <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
       </NavLinkBox>
+
       <DownPage>
         <ExperienceSkills>
           <SkillsList
@@ -49,6 +53,7 @@ const Home = () => {
             type="DownPage"
           />
         </ExperienceSkills>
+
         <EducationSkills>
           <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
         </EducationSkills>

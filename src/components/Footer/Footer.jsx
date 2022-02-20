@@ -19,6 +19,7 @@ const Footer = () => {
           <CustomizedLocalPhoneIcon fontSize="small" />
           <span>+48 573 995 682</span>
         </LinkContacts>
+
         <LinkContacts href="mailto:zholondkovskyimykhailo@gmail.com">
           <CustomizedEmailIcon fontSize="small" />
           <span>zholondkovskyimykhailo@gmail.com</span>

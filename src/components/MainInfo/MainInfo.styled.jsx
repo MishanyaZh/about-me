@@ -23,6 +23,10 @@ export const Summary = styled.div`
   }
 `;
 
+export const SummarySkills = styled.span`
+  color: var(--text-acc);
+`;
+
 export const ImgBox = styled.div``;
 
 export const Img = styled.img`
