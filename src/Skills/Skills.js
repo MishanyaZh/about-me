@@ -58,7 +58,7 @@ export const EDUCATION = [
 
 export const WORK_EXPERIENCE = [
   {
-    subtitle: 'Developer experience | Non-commercial experience',
+    subtitle: 'Developer experience',
     date: '(January 2021 - present)',
     skills: [
       'I have programming experience in courses and experience in my own projects, also I have experience in team projects.',

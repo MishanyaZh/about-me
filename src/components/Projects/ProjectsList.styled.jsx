@@ -10,14 +10,12 @@ export const List = styled.ul`
 export const Item = styled.li`
   position: relative;
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-basis: calc((100% - 30px) / 1);
-
   margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 15px;
@@ -28,7 +26,6 @@ export const Item = styled.li`
   box-shadow: var(--box-shadow-wrrap-2);
   background: var(--color-theme-card);
   transition: all 0.5s ease-out;
-
   &:before {
     content: '';
     display: block;
@@ -42,13 +39,11 @@ export const Item = styled.li`
     background: var(--hover-theme-card);
     transition: 0.5s ease padding-top, 0.5s ease width;
   }
-
   &:hover {
     &:before {
       width: 150%;
       padding-top: 150%;
     }
-
     & Button {
       border: 1px solid var(--text-acc);
       background: var(--color-theme-card);
@@ -60,11 +55,9 @@ export const Item = styled.li`
       transition: all 0.5s ease-out;
     } */
   }
-
   @media (min-width: 550px) {
     flex-basis: calc((100% - 40px) / 2);
   }
-
   @media (min-width: 768px) {
     flex-basis: calc((100% - 80px) / 3);
   }
@@ -80,14 +73,12 @@ export const Link = styled.a`
 
 export const Button = styled.button`
   position: relative;
-
   display: inline-block;
   text-align: center;
   font-size: 16px;
   margin-top: 5px;
   padding: 10px 10px;
   border-radius: 5px;
-
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s ease-out;

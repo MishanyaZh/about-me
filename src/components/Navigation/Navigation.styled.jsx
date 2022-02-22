@@ -62,3 +62,9 @@ export const NavigtionNavLink = styled(NavLink)`
     background: var(--hover-theme-card);
   }
 `;
+
+export const Logo = styled.img`
+  width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+`;

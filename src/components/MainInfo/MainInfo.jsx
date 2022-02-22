@@ -6,7 +6,7 @@ const MainInfo = () => {
   return (
     <MainInfoBox>
       <h1>Mykhailo Zholondkovskyi</h1>
-      <h2>junior Full Stack Developer</h2>
+      <h2>Full Stack Developer</h2>
 
       <Img src={foto} alt="about-me-foto" />
 

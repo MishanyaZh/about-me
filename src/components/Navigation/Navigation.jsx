@@ -1,7 +1,9 @@
 import React, { useState, useLayoutEffect } from 'react';
 import 'react-theme-toggle-button/dist/index.css';
 import ThemeToggleButton from 'react-theme-toggle-button';
-import { NavigtionNavLink, Nav, ContactLink } from './Navigation.styled';
+import { NavigtionNavLink, Nav, ContactLink, Logo } from './Navigation.styled';
+
+import logo from '../../images/react.svg';
 
 const Navigation = () => {
   const [isDark, setIsDark] = useState(true); //defolt theme = 'dark'
@@ -30,7 +32,8 @@ const Navigation = () => {
 
   return (
     <Nav className="Navigation">
-      <p>MENU</p>
+      <Logo src={logo} alt="Logo" />
+      {/* <p>MENU</p> */}
       <NavigtionNavLink to="/">Home</NavigtionNavLink>
       <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
       <ContactLink href="#footer">Contacts</ContactLink>
