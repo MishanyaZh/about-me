@@ -21,10 +21,10 @@ export const SOFT_SKILLS = [
 ];
 
 export const LANGUAGES = [
-  'Polish – pre-intermediate',
-  'English – pre-intermediate',
-  'Ukrainian – native',
-  'Russian – native',
+  'Polish – В2',
+  'English – В1',
+  'Ukrainian – С2',
+  'Russian – С1',
 ];
 
 export const EDUCATION = [

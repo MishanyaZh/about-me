@@ -37,7 +37,7 @@ export const TechnicalSkills = styled.div`
 
 export const SoftSkills = styled.div`
   min-width: 195px;
-  height: 236px;
+  height: 284px;
 
   display: flex;
   flex-direction: column;

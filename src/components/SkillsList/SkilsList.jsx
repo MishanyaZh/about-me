@@ -15,7 +15,7 @@ const SkillsList = ({ SKILLS, title, type }) => {
       {type !== 'DownPage' &&
         SKILLS.map((item, index) => (
           <li key={index}>
-            <h5>{item}</h5>
+            <h4>{item}</h4>
           </li>
         ))}
       {type === 'DownPage' &&

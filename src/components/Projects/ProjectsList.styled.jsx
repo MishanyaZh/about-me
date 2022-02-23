@@ -12,7 +12,7 @@ export const Item = styled.li`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   flex-basis: calc((100% - 30px) / 1);
