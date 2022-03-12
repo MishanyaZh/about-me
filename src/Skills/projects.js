@@ -67,6 +67,24 @@ export const PROJECTS = [
     link: 'https://zhm-dashboard.netlify.app',
     description: 'User information panel (in the process of developing)',
   },
+  {
+    subtitle: '"MoGo"',
+    technologies: '[Html, CSS]',
+    link: 'https://kind-perlman-82972e.netlify.app',
+    description: 'Company website',
+  },
+  {
+    subtitle: '"ActiveBox"',
+    technologies: '[Html, CSS]',
+    link: 'https://suspicious-khorana-a831fb.netlify.app',
+    description: 'Company website',
+  },
+  {
+    subtitle: '"Alex Tur"',
+    technologies: '[JS, Html, CSS]',
+    link: 'https://mishanyazh.github.io/my-resyme-js/',
+    description: 'Frontend Developer website',
+  },
 ];
 
 export const buttonsName = ['All', 'React', 'Vue', 'Node', 'JS', 'Html'];
