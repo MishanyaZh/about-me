@@ -33,7 +33,6 @@ const Navigation = () => {
   return (
     <Nav className="Navigation">
       <Logo src={logo} alt="Logo" />
-      {/* <p>MENU</p> */}
       <NavigtionNavLink to="/">Home</NavigtionNavLink>
       <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
       <ContactLink href="#footer">Contacts</ContactLink>

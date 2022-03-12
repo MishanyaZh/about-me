@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { buttonsName } from '../../../Skills/projects';
 import { Button, ButtonGroup, Box } from '@mui/material';
 
 const FilterButtons = ({ handlerButtonGroupSwitch }) => {
+  const [width, setWidth] = useState(window.outerWidth);
+
+  useEffect(() => {
+    const widthChangeEvent = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', widthChangeEvent);
+    widthChangeEvent();
+    return () => {
+      window.removeEventListener('resize', widthChangeEvent);
+    };
+  }, [width]);
+
   return (
     <>
       <Box sx={{ textAlign: 'center' }}>
         <ButtonGroup
           sx={{ boxShadow: 'var(--box-shadow-wrrap-2)' }}
           onClick={handlerButtonGroupSwitch}
-          size="small"
+          size={width < 425 ? 'small' : 'medium'}
           variant="outlined"
           aria-label="outlined button group"
         >
