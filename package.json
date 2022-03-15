@@ -16,6 +16,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-theme-toggle-button": "^1.1.0",
+    "typescript": "^4.6.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -52,7 +53,7 @@
     "prettier": "^2.5.1"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,css,md,jsx}": "prettier --write"
+    "*.{js,jsx,tsx}": "eslint --cache --fix",
+    "*.{js,css,md,jsx,tsx}": "prettier --write"
   }
 }
