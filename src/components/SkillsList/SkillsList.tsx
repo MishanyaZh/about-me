@@ -15,9 +15,9 @@ type Option = {
 };
 
 interface Props {
-  SKILLS: Option[];
+  SKILLS: Option[] | string[];
   title: string;
-  type: string;
+  type?: string;
 }
 
 const SkillsList = ({ SKILLS, title, type }: Props) => {
