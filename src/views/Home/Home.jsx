@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 
 import MainInfo from '../../components/MainInfo/MainInfo';
-import SkillsList from '../../components/SkillsList/SkilsList';
+import SkillsList from '../../components/SkillsList/SkillsList.tsx';
+
 import {
   TECHNICAL_SKILLS,
   SOFT_SKILLS,
   LANGUAGES,
   EDUCATION,
   WORK_EXPERIENCE,
-} from '../../Skills/Skills';
+} from '../../Skills/Skills.js';
 
 import {
   FrontPage,

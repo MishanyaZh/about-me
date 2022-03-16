@@ -11,11 +11,15 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.40",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-theme-toggle-button": "^1.1.0",
+    "typescript": "^4.6.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,13 +50,14 @@
     ]
   },
   "devDependencies": {
+    "@types/react-dom": "^17.0.13",
     "eslint": "^8.8.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1"
   },
   "lint-staged": {
-    "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,css,md,jsx}": "prettier --write"
+    "*.{js,jsx,tsx}": "eslint --cache --fix",
+    "*.{js,css,md,jsx,tsx}": "prettier --write"
   }
 }
