@@ -8,19 +8,22 @@ import {
   Slill,
 } from './SkillsList.styled';
 
-type Option = {
-  subtitle: string;
-  date: string;
-  skills: string[];
-};
+// interface ITopPage {
+//   skills: string[];
+// }
 
-interface Props {
-  SKILLS: Option[] | string[];
-  title: string;
-  type?: string;
-}
+// interface Props {
+//   SKILLS: ISKILLS[] | string[];
+//   title: string;
+//   type?: string;
+// }
+// interface ISKILLS {
+//   subtitle: string;
+//   date: string;
+//   skills: string[];
+// }
 
-const SkillsList = ({ SKILLS, title, type }: Props) => {
+const SkillsList = ({ SKILLS, title, type }) => {
   return (
     <SkillList>
       <Title>{title}</Title>
