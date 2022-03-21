@@ -13,6 +13,6 @@ export const DownPageItems = styled.li`
 export const Date = styled.span`
   color: var(--text-color-2);
 `;
-export const Slill = styled.li`
+export const SKill = styled.li`
   color: var(--text-color);
 `;

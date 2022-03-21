@@ -22,17 +22,6 @@ import {
 } from './Home.styled';
 import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
 
-// interface Props {
-//   SKILLS: ISKILLS[] | string[];
-//   title: string;
-//   type?: string;
-// }
-// interface ISKILLS {
-//   subtitle: string;
-//   date: string;
-//   skills: string[];
-// }
-
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,19 +34,26 @@ const Home = () => {
 
         <TechnicalSkills>
           <SkillsList
-            SKILLS={TECHNICAL_SKILLS}
+            ShortSKILLS={TECHNICAL_SKILLS}
             title={'TECHNICAL SKILLS'}
             type="TopPage"
+            SKILLS={[]}
           />
         </TechnicalSkills>
 
         <SoftSkills>
           <SkillsList
-            SKILLS={SOFT_SKILLS}
+            ShortSKILLS={SOFT_SKILLS}
             title={'SOFT SKILLS'}
             type="TopPage"
+            SKILLS={[]}
           />
-          <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} type="TopPage" />
+          <SkillsList
+            ShortSKILLS={LANGUAGES}
+            title={'LANGUAGES'}
+            type="TopPage"
+            SKILLS={[]}
+          />
         </SoftSkills>
       </FrontPage>
 
@@ -71,11 +67,17 @@ const Home = () => {
             SKILLS={WORK_EXPERIENCE}
             title={'WORK EXPERIENCE'}
             type="DownPage"
+            ShortSKILLS={[]}
           />
         </ExperienceSkills>
 
         <EducationSkills>
-          <SkillsList SKILLS={EDUCATION} title={'EDUCATION'} type="DownPage" />
+          <SkillsList
+            SKILLS={EDUCATION}
+            title={'EDUCATION'}
+            type="DownPage"
+            ShortSKILLS={[]}
+          />
         </EducationSkills>
       </DownPage>
     </>

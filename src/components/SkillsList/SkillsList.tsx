@@ -5,30 +5,26 @@ import {
   DownPageItems,
   SkillList,
   Date,
-  Slill,
+  SKill,
 } from './SkillsList.styled';
+interface IProps {
+  ShortSKILLS: string[];
+  SKILLS: ISkills[];
+  title: string;
+  type: string;
+}
+interface ISkills {
+  subtitle: string;
+  date: string;
+  skills: string[];
+}
 
-// interface ITopPage {
-//   skills: string[];
-// }
-
-// interface Props {
-//   SKILLS: ISKILLS[] | string[];
-//   title: string;
-//   type?: string;
-// }
-// interface ISKILLS {
-//   subtitle: string;
-//   date: string;
-//   skills: string[];
-// }
-
-const SkillsList = ({ SKILLS, title, type }) => {
+const SkillsList = ({ ShortSKILLS, SKILLS, title, type }: IProps) => {
   return (
     <SkillList>
       <Title>{title}</Title>
       {type !== 'DownPage' &&
-        SKILLS.map((item, index) => (
+        ShortSKILLS.map((item, index) => (
           <li key={index}>
             <h4>{item}</h4>
           </li>
@@ -40,7 +36,7 @@ const SkillsList = ({ SKILLS, title, type }) => {
             <Date>{item.date}</Date>
             <ul>
               {item.skills.map((skill, index) => (
-                <Slill key={index}>{skill}</Slill>
+                <SKill key={index}>{skill}</SKill>
               ))}
             </ul>
           </DownPageItems>
