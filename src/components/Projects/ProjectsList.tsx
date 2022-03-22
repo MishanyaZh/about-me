@@ -10,14 +10,25 @@ import {
   Technologies,
 } from './ProjectsList.styled';
 
-const ProjectsList = ({ PROJECTS }) => {
+interface IProps {
+  PROJECTS: IProjects[];
+}
+
+interface IProjects {
+  subtitle: string;
+  technologies: string;
+  link: string;
+  description: string;
+}
+
+const ProjectsList = ({ PROJECTS }: IProps) => {
   return (
     <List>
       {PROJECTS.map((item, index) => (
         <Item key={index}>
           <Link
             href={item.link}
-            alt={item.subtitle}
+            // alt={item.subtitle}
             target="_blank"
             rel="noreferrer"
           >
@@ -28,7 +39,7 @@ const ProjectsList = ({ PROJECTS }) => {
 
           <Link
             href={item.link}
-            alt={item.subtitle}
+            // alt={item.subtitle}
             target="_blank"
             rel="noreferrer"
           >

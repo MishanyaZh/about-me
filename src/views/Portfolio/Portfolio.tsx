@@ -16,7 +16,9 @@ const Portfolio = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handlerButtonGroupSwitch = EventTarget => {
+  const handlerButtonGroupSwitch = (EventTarget: {
+    target: { name: string };
+  }) => {
     const curentButton = EventTarget.target.name;
     if (curentButton === 'All') {
       setFilteredProjects(allProjects);
