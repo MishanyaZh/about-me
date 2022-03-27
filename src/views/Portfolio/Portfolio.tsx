@@ -7,6 +7,12 @@ import { Title } from './Portfolio.styled';
 import { NavLinkBox } from '../Home/Home.styled';
 import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
 
+type fn = (EventTarget: {
+  target: {
+    name: string;
+  };
+}) => void;
+
 const Portfolio = () => {
   const [allProjects, setAllProjects] = useState(PROJECTS);
   const [filteredProjects, setFilteredProjects] = useState(allProjects);
@@ -16,9 +22,7 @@ const Portfolio = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handlerButtonGroupSwitch = (EventTarget: {
-    target: { name: string };
-  }) => {
+  const handlerButtonGroupSwitch: fn = EventTarget => {
     const curentButton = EventTarget.target.name;
     if (curentButton === 'All') {
       setFilteredProjects(allProjects);

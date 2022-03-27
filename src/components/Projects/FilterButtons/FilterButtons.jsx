@@ -2,6 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { buttonsName } from '../../../Skills/projects';
 import { Button, ButtonGroup, Box } from '@mui/material';
 
+// interface Iprops {
+// handlerButtonGroupSwitch: string;
+// ButtonGroup: {
+//   sx: { boxShadow: string };
+//   onClick: MouseEventHandler;
+//   size: { width: string };
+//   variant: string;
+//   ariaLabel: string;
+// };
+// }
+
 const FilterButtons = ({ handlerButtonGroupSwitch }) => {
   const [width, setWidth] = useState(window.outerWidth);
 
