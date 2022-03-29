@@ -13,8 +13,11 @@ const MainInfo = () => {
       <Summary>
         I want to be part of a friendly and professional team in which I could
         develop my skills as a Front End Developer. I have knowledge of{' '}
-        <SummarySkills>HTML, CSS, JavaScript, React, and Node.</SummarySkills> I
-        am fast learner and can quickly integrate into a team so I can provide
+        <SummarySkills>HTML, CSS, JavaScript, React, and Node. </SummarySkills>
+        I'm currently studying <SummarySkills>TypeScript</SummarySkills>. I have
+        experience of teamwork using <SummarySkills>Scrum</SummarySkills>{' '}
+        methodology and <SummarySkills>Agile</SummarySkills> philosophy. I am
+        fast learner and can quickly integrate into a team so I can provide
         value to the company and the customers.
       </Summary>
     </MainInfoBox>

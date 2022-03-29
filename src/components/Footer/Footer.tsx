@@ -9,6 +9,7 @@ import {
   CustomizedLocalPhoneIcon,
   CustomizedEmailIcon,
   CustomizedLocationOnIcon,
+  CustomizedPictureAsPdfIcon,
 } from './Footer.styled';
 
 const Footer = () => {
@@ -49,7 +50,7 @@ const Footer = () => {
         </LinkContacts>
       </SocialContacts>
 
-      <div>
+      <Contacts>
         <LinkContacts
           href="https://goo.gl/maps/bZbz9wkoaYwjsyZGA"
           target="_blank"
@@ -58,7 +59,15 @@ const Footer = () => {
           <CustomizedLocationOnIcon />
           <span>Gorzow Wielkopolski</span>
         </LinkContacts>
-      </div>
+
+        <LinkContacts
+          href="https://www.canva.com/design/DAErTJkUFOQ/vj0DUw5s2xXVDs6rR9uOJA/watch?utm_content=DAErTJkUFOQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          target="_blank"
+        >
+          <CustomizedPictureAsPdfIcon />
+          <span>Open CV</span>
+        </LinkContacts>
+      </Contacts>
     </FooterContacts>
   );
 };

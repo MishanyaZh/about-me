@@ -4,6 +4,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+
+export const CustomizedPictureAsPdfIcon = styled(PictureAsPdfIcon)`
+  margin-right: 5px;
+  color: currentColor;
+  :hover {
+    color: currentColor;
+  }
+`;
 
 export const CustomizedLocationOnIcon = styled(LocationOnIcon)`
   margin-right: 5px;
