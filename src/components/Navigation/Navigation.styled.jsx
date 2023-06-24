@@ -36,7 +36,7 @@ export const ContactLink = styled.a`
   }
 `;
 
-export const NavigtionNavLink = styled(NavLink)`
+export const NavigationNavLink = styled(NavLink)`
   padding: 5px 5px;
   border-radius: 5px;
   text-decoration: none;

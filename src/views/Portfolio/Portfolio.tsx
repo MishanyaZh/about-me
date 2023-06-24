@@ -5,7 +5,7 @@ import ProjectsList from '../../components/Projects/ProjectsList';
 
 import { Title } from './Portfolio.styled';
 import { NavLinkBox } from '../Home/Home.styled';
-import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
+import { NavigationNavLink } from '../../components/Navigation/Navigation.styled';
 
 type fn = (EventTarget: {
   target: {
@@ -23,13 +23,13 @@ const Portfolio = () => {
   }, []);
 
   const handlerButtonGroupSwitch: fn = EventTarget => {
-    const curentButton = EventTarget.target.name;
-    if (curentButton === 'All') {
+    const currentButton = EventTarget.target.name;
+    if (currentButton === 'All') {
       setFilteredProjects(allProjects);
       return;
     }
     setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes(curentButton)),
+      PROJECTS.filter(item => item.technologies.includes(currentButton)),
     );
   };
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
       <FilterButtons handlerButtonGroupSwitch={handlerButtonGroupSwitch} />
       <ProjectsList PROJECTS={filteredProjects} />
       <NavLinkBox>
-        <NavigtionNavLink to="/">Home</NavigtionNavLink>
+        <NavigationNavLink to="/">Home</NavigationNavLink>
       </NavLinkBox>
     </>
   );

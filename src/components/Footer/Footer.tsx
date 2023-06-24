@@ -60,13 +60,13 @@ const Footer = () => {
           <span>Gorzow Wielkopolski</span>
         </LinkContacts>
 
-        <LinkContacts
+        {/* <LinkContacts
           href="https://www.canva.com/design/DAErTJkUFOQ/vj0DUw5s2xXVDs6rR9uOJA/watch?utm_content=DAErTJkUFOQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           target="_blank"
         >
           <CustomizedPictureAsPdfIcon />
           <span>Open CV</span>
-        </LinkContacts>
+        </LinkContacts> */}
       </Contacts>
     </FooterContacts>
   );

@@ -7,10 +7,12 @@ export const TECHNICAL_SKILLS = [
   'Redux',
   'CSS',
   'HTML',
-  'Scrum',
-  'Agile',
   'NPM',
+  'Yarn',
   'REST API',
+  'Graphql',
+  'ClickUp',
+  'Figma',
 ];
 
 export const SOFT_SKILLS = [
@@ -18,16 +20,23 @@ export const SOFT_SKILLS = [
   'Disciplined',
   'Motivated',
   'Communication',
+  'Scrum',
+  'Agile',
 ];
 
 export const LANGUAGES = [
-  'Polish – В2',
-  'English – В1',
-  'Ukrainian – С2',
-  'Russian – С1',
+  'Polish - B2',
+  'English - B2',
+  'Ukrainian - C2',
+  'Russian - C2',
 ];
 
 export const EDUCATION = [
+  {
+    subtitle: 'English School "Study-Less"',
+    date: '(August 202 - June 2022)',
+    skills: ['Upper-Intermediate (B2)'],
+  },
   {
     subtitle: 'IT School "GoIT"',
     date: '(January 2021 - January 2022)',
@@ -58,8 +67,15 @@ export const EDUCATION = [
 
 export const WORK_EXPERIENCE = [
   {
+    subtitle: 'React Developer | "Learning-Space"',
+    date: '(May 2022 - present)',
+    skills: [
+      'Developing education platform together with team developers. I use React.js, graphql, styled components, git, JS, TS, mui, routes, ClickUp, Figma, Miro and many other tools.',
+    ],
+  },
+  {
     subtitle: 'Developer experience',
-    date: '(January 2021 - present)',
+    date: '(Jul 2020 - present)',
     skills: [
       'I have programming experience in courses and experience in my own projects, also I have experience in team projects.',
     ],
@@ -72,7 +88,6 @@ export const WORK_EXPERIENCE = [
       'Conform to and follow requirements established in Environmental Management System.',
     ],
   },
-
   {
     subtitle: 'Security service manager | "Food planet"',
     date: '(2011 - 2016)',

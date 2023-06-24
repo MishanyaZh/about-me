@@ -13,7 +13,7 @@ const MainInfo = () => {
       <Summary>
         I want to be part of a friendly and professional team in which I could
         develop my skills as a Front End Developer. I have knowledge of{' '}
-        <SummarySkills>HTML, CSS, JavaScript, React, and Node. </SummarySkills>
+        <SummarySkills>HTML, CSS, JavaScript, and React. </SummarySkills>
         I'm currently studying <SummarySkills>TypeScript</SummarySkills>. I have
         experience of teamwork using <SummarySkills>Scrum</SummarySkills>{' '}
         methodology and <SummarySkills>Agile</SummarySkills> philosophy. I am

@@ -20,7 +20,7 @@ import {
   ExperienceSkills,
   NavLinkBox,
 } from './Home.styled';
-import { NavigtionNavLink } from '../../components/Navigation/Navigation.styled';
+import { NavigationNavLink } from '../../components/Navigation/Navigation.styled';
 
 const Home = () => {
   useEffect(() => {
@@ -58,7 +58,7 @@ const Home = () => {
       </FrontPage>
 
       <NavLinkBox>
-        <NavigtionNavLink to="/portfolio">Portfolio</NavigtionNavLink>
+        <NavigationNavLink to="/portfolio">Portfolio</NavigationNavLink>
       </NavLinkBox>
 
       <DownPage>
