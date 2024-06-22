@@ -9,7 +9,7 @@ import {
   CustomizedLocalPhoneIcon,
   CustomizedEmailIcon,
   CustomizedLocationOnIcon,
-  CustomizedPictureAsPdfIcon,
+  // CustomizedPictureAsPdfIcon, // temporary hidden
 } from './Footer.styled';
 
 const Footer = () => {
