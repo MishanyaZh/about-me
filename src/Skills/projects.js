@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     subtitle: '"Irregular-verbs"',
     technologies: '[React.js]',
-    link: 'zhm-irregular-verbs.netlify.app',
+    link: 'https://zhm-irregular-verbs.netlify.app',
     description: 'Education page, for learn irregular verbs. Oct 2022',
   },
   {
