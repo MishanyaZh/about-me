@@ -1,5 +1,11 @@
 export const PROJECTS = [
   {
+    subtitle: '"CRM-for-vendors"',
+    technologies: '[Next.js]',
+    link: 'https://crm-seven-gold.vercel.app',
+    description: 'Admin panel for food delivery company. May 2024',
+  },
+  {
     subtitle: '"Irregular-verbs"',
     technologies: '[React.js]',
     link: 'https://zhm-irregular-verbs.netlify.app',
@@ -44,25 +50,25 @@ export const PROJECTS = [
   },
   {
     subtitle: '"Patients"',
-    technologies: '[JS, Vue.js]',
+    technologies: '[Vue.js]',
     link: 'https://zhm-vue-patient-and-medication.netlify.app',
     description: 'Patients and medical care. Nov 2021',
   },
   {
     subtitle: '"Posts"',
-    technologies: '[JS, Vue.js]',
+    technologies: '[Vue.js]',
     link: 'https://vue-test-posts.netlify.app',
     description: 'User publications. Nov 2021',
   },
   {
     subtitle: '"Template-rest-api"',
-    technologies: '[JS, Backend, Node]',
+    technologies: '[JS, BE, Node]',
     link: 'https://github.com/MishanyaZh/nodejs-homework-template-rest-api/tree/hw06-email',
     description: 'Users contact data. Feb 2021',
   },
   {
     subtitle: '"Graphql-project-db"',
-    technologies: '[JS, Backend, Graphql]',
+    technologies: '[JS, BE, Graphql]',
     link: 'https://github.com/MishanyaZh/graph-project',
     description: 'Db for library, use graphql, apollo. June 2022',
   },
@@ -110,4 +116,4 @@ export const PROJECTS = [
   },
 ];
 
-export const buttonsName = ['All', 'React', 'Vue', 'Backend', 'JS', 'Html'];
+export const buttonsName = ['All', 'React', 'Next', 'Vue', 'BE', 'JS', 'Html'];
