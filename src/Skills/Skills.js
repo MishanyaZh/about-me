@@ -1,7 +1,7 @@
 export const TECHNICAL_SKILLS = [
   'JavaScript',
+  'TypeScript',
   'React.js',
-  'Node.js',
   'GIT',
   'WebPack',
   'Redux',
@@ -82,7 +82,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     subtitle: 'Product operator | "Faurecia"',
-    date: '(2017 - present)',
+    date: '(2017 - May 2022)',
     skills: [
       'Carried out Process to correct Quality and Production Standards within cycle time.',
       'Conform to and follow requirements established in Environmental Management System.',
