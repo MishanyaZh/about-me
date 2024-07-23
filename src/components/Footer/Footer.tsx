@@ -9,7 +9,7 @@ import {
   CustomizedLocalPhoneIcon,
   CustomizedEmailIcon,
   CustomizedLocationOnIcon,
-  // CustomizedPictureAsPdfIcon, // temporary hidden
+  CustomizedPictureAsPdfIcon,
 } from './Footer.styled';
 
 const Footer = () => {
@@ -60,13 +60,13 @@ const Footer = () => {
           <span>Gorzow Wielkopolski</span>
         </LinkContacts>
 
-        {/* <LinkContacts
-          href="https://www.canva.com/design/DAErTJkUFOQ/vj0DUw5s2xXVDs6rR9uOJA/watch?utm_content=DAErTJkUFOQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+        <LinkContacts
+          href="https://www.canva.com/design/DAFslZ5qbvI/u5mdVOrPKDIcqbiO1thQOQ/view?utm_content=DAFslZ5qbvI&utm_campaign=designshare&utm_medium=link&utm_source=editor"
           target="_blank"
         >
           <CustomizedPictureAsPdfIcon />
           <span>Open CV</span>
-        </LinkContacts> */}
+        </LinkContacts>
       </Contacts>
     </FooterContacts>
   );
