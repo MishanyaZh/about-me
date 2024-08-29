@@ -2,13 +2,14 @@ export const TECHNICAL_SKILLS = [
   'JavaScript',
   'TypeScript',
   'React.js',
-  'GIT',
-  'WebPack',
+  'Next.js',
+  'GIT, GitHub',
   'Redux',
-  'CSS',
   'HTML',
-  'NPM',
-  'Yarn',
+  'CSS',
+  'Styled components',
+  'Tailwindcss',
+  'NPM, Yarn',
   'REST API',
   'Graphql',
   'ClickUp',
@@ -34,7 +35,7 @@ export const LANGUAGES = [
 export const EDUCATION = [
   {
     subtitle: 'English School "Study-Less"',
-    date: '(August 202 - June 2022)',
+    date: '(August 2021 - June 2022)',
     skills: ['Upper-Intermediate (B2)'],
   },
   {
@@ -67,10 +68,17 @@ export const EDUCATION = [
 
 export const WORK_EXPERIENCE = [
   {
-    subtitle: 'React Developer | "Learning-Space"',
-    date: '(May 2022 - present)',
+    subtitle: 'React Developer | "Digital Creative Cluster"',
+    date: '(Jan 2024 - present)',
     skills: [
-      'Developing education platform together with team developers. I use React.js, graphql, styled components, git, JS, TS, mui, routes, ClickUp, Figma, Miro and many other tools.',
+      'Developing an educational platform utilizing React, JavaScript, TypeScript, StyledComponents, GraphQL, and Redux. Collaborating through Git and GitHub, managing code in VS Code, and implementing UI designs with Material UI and Figma. Coordinating project tasks using ClickUp and visualizing workflows in Miro.',
+    ],
+  },
+  {
+    subtitle: 'React Developer | "Learning-Space"',
+    date: '(Jun 2022 - Jan 2024)',
+    skills: [
+      'Collaborated with a diverse team to develop an interactive platform. Designed and maintained user interface components using React. Utilized GraphQL for efficient data handling. Styled the application with Styled Components and Material UI. Managed version control with Git and GitHub. Communicated daily via Slack and Google Meet. Tracked tasks and progress in ClickUp for effective project management.',
     ],
   },
   {
@@ -78,22 +86,6 @@ export const WORK_EXPERIENCE = [
     date: '(Jul 2020 - present)',
     skills: [
       'I have programming experience in courses and experience in my own projects, also I have experience in team projects.',
-    ],
-  },
-  {
-    subtitle: 'Product operator | "Faurecia"',
-    date: '(2017 - May 2022)',
-    skills: [
-      'Carried out Process to correct Quality and Production Standards within cycle time.',
-      'Conform to and follow requirements established in Environmental Management System.',
-    ],
-  },
-  {
-    subtitle: 'Security service manager | "Food planet"',
-    date: '(2011 - 2016)',
-    skills: [
-      'Developed and enforced security protocols, policies, and procedures necessary for safeguarding lives and property.',
-      'Created reports for management on security status and analyze data to form proposals for improvements.',
     ],
   },
 ];

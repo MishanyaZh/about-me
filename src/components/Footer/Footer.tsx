@@ -61,7 +61,7 @@ const Footer = () => {
         </LinkContacts>
 
         <LinkContacts
-          href="https://www.canva.com/design/DAFslZ5qbvI/u5mdVOrPKDIcqbiO1thQOQ/view?utm_content=DAFslZ5qbvI&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+          href="https://www.canva.com/design/DAFslZ5qbvI/S7rovKfrcMW5vSg8A_f0dg/view"
           target="_blank"
         >
           <CustomizedPictureAsPdfIcon />

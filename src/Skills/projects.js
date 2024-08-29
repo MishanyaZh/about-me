@@ -1,5 +1,11 @@
 export const PROJECTS = [
   {
+    subtitle: '"Auto-Service"',
+    technologies: '[Next.js]',
+    link: 'https://auto-service-vm.vercel.app/',
+    description: 'Auto service using next js and tailwind css. [Aug 2024]',
+  },
+  {
     subtitle: '"IMDb-Clone"',
     technologies: '[Next.js]',
     link: 'https://imdb-next-orcin.vercel.app/',
