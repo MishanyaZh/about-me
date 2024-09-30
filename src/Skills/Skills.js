@@ -71,21 +71,28 @@ export const WORK_EXPERIENCE = [
     subtitle: 'React Developer | "Digital Creative Cluster"',
     date: '(Jan 2024 - present)',
     skills: [
-      'Developing an educational platform utilizing React, JavaScript, TypeScript, StyledComponents, GraphQL, and Redux. Collaborating through Git and GitHub, managing code in VS Code, and implementing UI designs with Material UI and Figma. Coordinating project tasks using ClickUp and visualizing workflows in Miro.',
+      'Developing an educational platform using React, TypeScript, GraphQL, and Redux.',
+      'Developing and maintaining user interface components using Styled Components and Material UI.',
+      'Optimized GraphQL performance in project.',
+      'Collaborated closely with the team using ClickUp and Miro for task management and workflow visualization.',
     ],
   },
   {
     subtitle: 'React Developer | "Learning-Space"',
     date: '(Jun 2022 - Jan 2024)',
     skills: [
-      'Collaborated with a diverse team to develop an interactive platform. Designed and maintained user interface components using React. Utilized GraphQL for efficient data handling. Styled the application with Styled Components and Material UI. Managed version control with Git and GitHub. Communicated daily via Slack and Google Meet. Tracked tasks and progress in ClickUp for effective project management.',
+      'Developed an interactive platform using React, Styled Components, and Material UI.',
+      'Enhancing and optimized user interface components for better design consistency and performance.',
+      'Participated in team meetings and project planning using Slack and Google Meet. Managed code versioning using Git and GitHub.',
     ],
   },
   {
     subtitle: 'Developer experience',
     date: '(Jul 2020 - present)',
     skills: [
-      'I have programming experience in courses and experience in my own projects, also I have experience in team projects.',
+      'I have good commercial programming experience.',
+      'Hands-on experience from educational courses.',
+      'Personal projects, and team-based collaborations.',
     ],
   },
 ];

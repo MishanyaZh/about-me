@@ -11,12 +11,12 @@ export const MainInfoBox = styled.div`
 `;
 
 export const Summary = styled.div`
-  margin: 0 auto;
   margin-top: 10px;
   padding: 5px;
   max-width: 450px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-wrrap-1);
+  text-align: justify;
   @media (max-width: 766px) {
     min-width: 250px;
     max-width: 450px;

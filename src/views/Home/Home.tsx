@@ -64,6 +64,7 @@ const Home = () => {
       <DownPage>
         <ExperienceSkills>
           <SkillsList
+            hasListStyle={true}
             SKILLS={WORK_EXPERIENCE}
             title={'WORK EXPERIENCE'}
             type="DownPage"
