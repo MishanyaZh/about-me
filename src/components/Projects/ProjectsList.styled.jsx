@@ -23,7 +23,7 @@ export const Item = styled.li`
   min-width: 236px;
   max-width: 237px;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-wrrap-2);
+  box-shadow: var(--box-shadow-2);
   background: var(--color-theme-card);
   transition: all 0.5s ease-out;
   &:before {

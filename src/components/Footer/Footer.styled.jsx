@@ -59,7 +59,7 @@ export const FooterContacts = styled.footer`
   transition: all 0.5s ease-out;
   border-radius: 5px;
   background: var(--color-theme-card);
-  box-shadow: var(--box-shadow-wrrap-1);
+  box-shadow: var(--box-shadow-1);
   @media (max-width: 766px) {
     flex-direction: column;
     align-items: center;

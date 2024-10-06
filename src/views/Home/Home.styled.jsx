@@ -24,7 +24,7 @@ export const TechnicalSkills = styled.div`
   border-radius: 5px;
   padding: 10px;
   text-transform: uppercase;
-  box-shadow: var(--box-shadow-wrrap-1);
+  box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
   transition: all 0.5s ease-out;
 
@@ -47,7 +47,7 @@ export const SoftSkills = styled.div`
   transition: all 0.5s ease-out;
   text-transform: uppercase;
   background: var(--color-theme-card);
-  box-shadow: var(--box-shadow-wrrap-1);
+  box-shadow: var(--box-shadow-1);
 
   @media (max-width: 766px) {
     /* flex-direction: row; */
@@ -63,7 +63,7 @@ export const EducationSkills = styled.div`
 
   transition: all 0.5s ease-out;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-wrrap-1);
+  box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
 `;
 export const ExperienceSkills = styled.div`
@@ -73,7 +73,7 @@ export const ExperienceSkills = styled.div`
 
   transition: all 0.5s ease-out;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-wrrap-1);
+  box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
   @media (max-width: 766px) {
     margin-bottom: 10px;
@@ -83,7 +83,7 @@ export const ExperienceSkills = styled.div`
   }
 `;
 
-export const DownPage = styled.div`
+export const Experience = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0 auto;

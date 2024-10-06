@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 
   border-radius: 5px;
   background: var(--color-theme);
-  box-shadow: var(--box-shadow-wrrap-2);
+  box-shadow: var(--box-shadow-2);
 `;
 
 export const ContactLink = styled.a`
@@ -29,7 +29,7 @@ export const ContactLink = styled.a`
   &:hover,
   :focus {
     border: 1px solid var(--text-acc);
-    box-shadow: var(--box-shadow-wrrap-2);
+    box-shadow: var(--box-shadow-2);
     transform: scale(1.1);
     color: var(--text-acc);
     background: var(--hover-theme-card);
@@ -48,7 +48,7 @@ export const NavigationNavLink = styled(NavLink)`
   &:hover,
   :focus {
     color: var(--text-acc);
-    box-shadow: var(--box-shadow-wrrap-2);
+    box-shadow: var(--box-shadow-2);
     border: 1px solid var(--text-acc);
     background: var(--hover-theme-card);
     transform: scale(1.1);
@@ -57,7 +57,7 @@ export const NavigationNavLink = styled(NavLink)`
   &.active {
     color: var(--text-acc);
     border: 1px solid var(--text-acc);
-    box-shadow: var(--box-shadow-wrrap-2);
+    box-shadow: var(--box-shadow-2);
     transform: scale(1.1);
     background: var(--hover-theme-card);
   }
@@ -67,4 +67,14 @@ export const Logo = styled.img`
   width: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  animation: rotate 10s linear infinite;
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 `;

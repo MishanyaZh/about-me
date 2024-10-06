@@ -1,38 +1,38 @@
-/* defolt theme = 'dark' */
+/* default theme = 'dark' */
 :root {
   --color-theme: rgb(27, 27, 27);
   --text-color: rgb(25, 118, 210);
-  --text-color-2: rgb(18, 26, 75);
-  --text-acc: rgb(250, 94, 3);
+  --text-color-2: rgb(131, 133, 143);
+  --text-acc: rgb(63, 199, 0);
 
   --color-theme-card: rgb(22, 11, 11);
   --hover-theme-card: rgb(0, 7, 61);
-  --box-shadow-wrrap-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
-  --box-shadow-wrrap-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
+  --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
+  --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
 }
 
 html[data-theme='light'] {
   --color-theme: rgb(157, 180, 207);
   --text-color: rgb(18, 26, 75);
-  --text-color-2: rgb(93, 95, 104);
+  --text-color-2: rgb(5, 5, 5);
   --text-acc: rgb(185, 72, 6);
 
   --color-theme-card: rgb(158, 165, 184);
   --hover-theme-card: rgb(173, 190, 228);
-  --box-shadow-wrrap-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
-  --box-shadow-wrrap-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
+  --box-shadow-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
+  --box-shadow-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
 }
-/* defolt theme = 'dark' */
+/* default theme = 'dark' */
 html[data-theme='dark'] {
   --color-theme: rgb(27, 27, 27);
   --text-color: rgb(25, 118, 210);
-  --text-color-2: rgb(64, 68, 88);
+  --text-color-2: rgb(131, 133, 143);
   --text-acc: rgb(63, 199, 0);
 
   --color-theme-card: rgb(22, 11, 11);
   --hover-theme-card: rgb(0, 7, 61);
-  --box-shadow-wrrap-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
-  --box-shadow-wrrap-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
+  --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
+  --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
 }
 
 html {

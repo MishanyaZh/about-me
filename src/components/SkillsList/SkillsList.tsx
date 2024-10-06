@@ -9,21 +9,21 @@ import {
   SubList,
 } from './SkillsList.styled';
 interface IProps {
-  ShortSKILLS: string[];
-  SKILLS: ISkills[];
+  SKILLS?: string[];
+  EXPERIENCE?: ExperienceTypes[];
   title: string;
   type: string;
   hasListStyle?: boolean;
 }
-interface ISkills {
+interface ExperienceTypes {
   subtitle: string;
   date: string;
   skills: string[];
 }
 
 const SkillsList = ({
-  ShortSKILLS,
   SKILLS,
+  EXPERIENCE,
   title,
   type,
   hasListStyle,
@@ -32,14 +32,14 @@ const SkillsList = ({
   return (
     <SkillList>
       <Title>{title}</Title>
-      {type !== 'DownPage' &&
-        ShortSKILLS.map((item, index) => (
+      {type === 'SKILLS' &&
+        SKILLS?.map((item, index) => (
           <li key={index}>
             <h4>{item}</h4>
           </li>
         ))}
-      {type === 'DownPage' &&
-        SKILLS.map((item, index) => (
+      {type === 'EXPERIENCE' &&
+        EXPERIENCE?.map((item, index) => (
           <DownPageItems key={index}>
             <h4>[ {item.subtitle} ]</h4>
             <Date>{item.date}</Date>

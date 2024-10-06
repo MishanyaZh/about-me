@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { buttonsName } from '../../../Skills/projects';
 import { Button, ButtonGroup, Box } from '@mui/material';
 
-interface Iprops {
+interface FilterButtonsInterface {
   handlerButtonGroupSwitch: (EventTarget: {
     target: {
       name: string;
@@ -10,7 +10,9 @@ interface Iprops {
   }) => void;
 }
 
-const FilterButtons = ({ handlerButtonGroupSwitch }: Iprops) => {
+const FilterButtons = ({
+  handlerButtonGroupSwitch,
+}: FilterButtonsInterface) => {
   const [width, setWidth] = useState(window.outerWidth);
 
   useEffect(() => {
@@ -27,13 +29,13 @@ const FilterButtons = ({ handlerButtonGroupSwitch }: Iprops) => {
   return (
     <>
       <Box sx={{ textAlign: 'center' }}>
-        <ButtonGroup<any> //ts documentation propose https://mui.com/guides/typescript/
-          sx={{ boxShadow: 'var(--box-shadow-wrrap-2)' }}
+        <ButtonGroup<any>
+          sx={{ boxShadow: 'var(--box-shadow-2)', maxWidth: '99%' }}
           onClick={handlerButtonGroupSwitch}
           size={width < 425 ? 'small' : 'medium'}
           variant="outlined"
           aria-label="outlined button group"
-          component={undefined} //ts autocomplete
+          component={undefined}
         >
           {buttonsName.map((button, index) => (
             <Button key={index} name={button}>

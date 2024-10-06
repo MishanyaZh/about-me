@@ -7,7 +7,7 @@ import {
   TECHNICAL_SKILLS,
   SOFT_SKILLS,
   LANGUAGES,
-  EDUCATION,
+  EDUCATION_EXPERIENCE,
   WORK_EXPERIENCE,
 } from '../../Skills/Skills.js';
 
@@ -15,7 +15,7 @@ import {
   FrontPage,
   TechnicalSkills,
   SoftSkills,
-  DownPage,
+  Experience,
   EducationSkills,
   ExperienceSkills,
   NavLinkBox,
@@ -34,26 +34,19 @@ const Home = () => {
 
         <TechnicalSkills>
           <SkillsList
-            ShortSKILLS={TECHNICAL_SKILLS}
+            SKILLS={TECHNICAL_SKILLS}
             title={'TECHNICAL SKILLS'}
-            type="TopPage"
-            SKILLS={[]}
+            type="SKILLS"
           />
         </TechnicalSkills>
 
         <SoftSkills>
           <SkillsList
-            ShortSKILLS={SOFT_SKILLS}
+            SKILLS={SOFT_SKILLS}
             title={'SOFT SKILLS'}
-            type="TopPage"
-            SKILLS={[]}
+            type="SKILLS"
           />
-          <SkillsList
-            ShortSKILLS={LANGUAGES}
-            title={'LANGUAGES'}
-            type="TopPage"
-            SKILLS={[]}
-          />
+          <SkillsList SKILLS={LANGUAGES} title={'LANGUAGES'} type="SKILLS" />
         </SoftSkills>
       </FrontPage>
 
@@ -61,26 +54,24 @@ const Home = () => {
         <NavigationNavLink to="/portfolio">Portfolio</NavigationNavLink>
       </NavLinkBox>
 
-      <DownPage>
+      <Experience>
         <ExperienceSkills>
           <SkillsList
             hasListStyle={true}
-            SKILLS={WORK_EXPERIENCE}
+            EXPERIENCE={WORK_EXPERIENCE}
             title={'WORK EXPERIENCE'}
-            type="DownPage"
-            ShortSKILLS={[]}
+            type="EXPERIENCE"
           />
         </ExperienceSkills>
 
         <EducationSkills>
           <SkillsList
-            SKILLS={EDUCATION}
+            EXPERIENCE={EDUCATION_EXPERIENCE}
             title={'EDUCATION'}
-            type="DownPage"
-            ShortSKILLS={[]}
+            type="EXPERIENCE"
           />
         </EducationSkills>
-      </DownPage>
+      </Experience>
     </>
   );
 };
