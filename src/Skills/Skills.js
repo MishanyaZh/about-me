@@ -1,19 +1,21 @@
 export const TECHNICAL_SKILLS = [
   'JavaScript',
   'TypeScript',
-  'React.js',
-  'Next.js',
+  'React',
+  'Next',
+  'Vue',
+  'Node',
+  'Graphql',
+  'REST API',
   'GIT, GitHub',
-  'Redux',
-  'HTML',
-  'CSS',
+  'Redux, Context',
+  'HTML, CSS',
   'Styled components',
   'Tailwindcss',
   'NPM, Yarn',
-  'REST API',
-  'Graphql',
-  'ClickUp',
-  'Figma',
+  'ClickUp, Slack',
+  'Figma, Miro',
+  'Photoshop, Corel',
 ];
 
 export const SOFT_SKILLS = [
@@ -32,7 +34,7 @@ export const LANGUAGES = [
   'Russian - C2',
 ];
 
-export const EDUCATION = [
+export const EDUCATION_EXPERIENCE = [
   {
     subtitle: 'English School "Study-Less"',
     date: '(August 2021 - June 2022)',
@@ -71,28 +73,27 @@ export const WORK_EXPERIENCE = [
     subtitle: 'React Developer | "Digital Creative Cluster"',
     date: '(Jan 2024 - present)',
     skills: [
-      'Developing an educational platform using React, TypeScript, GraphQL, and Redux.',
-      'Developing and maintaining user interface components using Styled Components and Material UI.',
-      'Optimized GraphQL performance in project.',
-      'Collaborated closely with the team using ClickUp and Miro for task management and workflow visualization.',
+      'Developed and maintained an educational platform using React, TypeScript, GraphQL, context, redux.',
+      'Enhanced and optimized UI components with Styled Components and Material UI.',
+      'Implemented optimizations for GraphQL, add hooks.',
+      'Conducting code reviews, and utilizing ClickUp for efficient task management and workflow visualization.',
     ],
   },
   {
-    subtitle: 'React Developer | "Learning-Space"',
+    subtitle: 'React Developer | "Learning-Space Sp. z o..o."',
     date: '(Jun 2022 - Jan 2024)',
     skills: [
-      'Developed an interactive platform using React, Styled Components, and Material UI.',
+      'Developed an interactive platform using React, Styled Components, and Material UI. ',
       'Enhancing and optimized user interface components for better design consistency and performance.',
-      'Participated in team meetings and project planning using Slack and Google Meet. Managed code versioning using Git and GitHub.',
+      'Participated in team meetings and project planning using Slack and Google Meet.',
+      'Managed code versioning using Git and GitHub.',
     ],
   },
   {
     subtitle: 'Developer experience',
     date: '(Jul 2020 - present)',
     skills: [
-      'I have good commercial programming experience.',
-      'Hands-on experience from educational courses.',
-      'Personal projects, and team-based collaborations.',
+      'I create and deploy web applications, handling everything from database integration to user interface development, and also develop custom web solutions',
     ],
   },
 ];
