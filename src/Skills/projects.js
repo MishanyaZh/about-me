@@ -1,9 +1,15 @@
 export const PROJECTS = [
   {
+    subtitle: '"Centrum Migranta"',
+    technologies: '[Next.js]',
+    link: 'https://migrant-center.vercel.app/',
+    description: 'Commercial website Migrant Center. (in progress) [Oct 2024]',
+  },
+  {
     subtitle: '"Auto-Service"',
     technologies: '[Next.js]',
     link: 'https://auto-service-vm.vercel.app/',
-    description: 'Auto service using next js and tailwind css. [Aug 2024]',
+    description: 'Commercial website Auto service. (in progress) [Aug 2024]',
   },
   {
     subtitle: '"IMDb-Clone"',
