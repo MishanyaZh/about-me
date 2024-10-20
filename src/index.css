@@ -1,6 +1,21 @@
 /* default theme = 'dark' */
+@keyframes neonFlicker {
+  0%,
+  100% {
+    text-shadow: var(--shadow-neon);
+  }
+  50% {
+    text-shadow: 0 0 5px var(--text-acc), 0 0 10px var(--text-acc),
+      0 0 20px var(--text-acc), 0 0 30px var(--text-color);
+  }
+  75% {
+    text-shadow: 0 0 5px var(--text-color-2), 0 0 10px var(--text-color-2),
+      0 0 15px var(--text-color-2), 0 0 25px var(--text-acc);
+  }
+}
 :root {
   --color-theme: rgb(27, 27, 27);
+  --text-color-white: #fff;
   --text-color: rgb(25, 118, 210);
   --text-color-2: rgb(131, 133, 143);
   --text-acc: rgb(63, 199, 0);
@@ -9,6 +24,11 @@
   --hover-theme-card: rgb(0, 7, 61);
   --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
   --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
+
+  --shadow-neon: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff,
+    0 0 40px #00ffe1;
+
+  --animation-neonFlicker: neonFlicker 5s ease-in-out infinite alternate;
 }
 
 html[data-theme='light'] {
@@ -21,6 +41,9 @@ html[data-theme='light'] {
   --hover-theme-card: rgb(173, 190, 228);
   --box-shadow-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
   --box-shadow-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
+
+  --shadow-neon: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ffa500,
+    0 0 40px #ffb347;
 }
 /* default theme = 'dark' */
 html[data-theme='dark'] {
@@ -33,6 +56,9 @@ html[data-theme='dark'] {
   --hover-theme-card: rgb(0, 7, 61);
   --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
   --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
+
+  --shadow-neon: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff,
+    0 0 40px #00ffe1;
 }
 
 html {

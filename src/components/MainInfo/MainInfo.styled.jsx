@@ -8,6 +8,13 @@ export const MainInfoBox = styled.div`
   border-radius: 5px;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-1);
+  h1,
+  h2 {
+    padding-bottom: 5px;
+    color: var(--text-color-white);
+    text-shadow: var(--shadow-neon);
+    animation: var(--animation-neonFlicker);
+  }
 `;
 
 export const Summary = styled.div`
@@ -27,8 +34,6 @@ export const SummarySkills = styled.span`
   color: var(--text-acc);
 `;
 
-export const ImgBox = styled.div``;
-
 export const Img = styled.img`
   width: 250px;
   height: 325px;
@@ -36,9 +41,4 @@ export const Img = styled.img`
   margin-top: 10px;
   border-radius: 5px;
   box-shadow: var(--box-shadow-1);
-  transition: all 0.5s ease-out;
-  &:hover {
-    transition: all 0.5s ease-out;
-    transform: scale(1.2);
-  }
 `;
