@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
 export const MainInfoBox = styled.div`
-  margin: 10px;
-  padding: 10px 10px 10px 10px;
+  margin: 20px 10px 10px 10px;
+  padding: 20px;
 
   transition: all 0.5s ease-out;
   border-radius: 5px;
@@ -20,9 +20,8 @@ export const MainInfoBox = styled.div`
 export const Summary = styled.div`
   margin-top: 10px;
   padding: 5px;
-  max-width: 450px;
+  max-width: 500px;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-1);
   text-align: justify;
   @media (max-width: 766px) {
     min-width: 250px;

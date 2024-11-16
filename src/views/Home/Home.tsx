@@ -9,6 +9,8 @@ import {
   LANGUAGES,
   EDUCATION_EXPERIENCE,
   WORK_EXPERIENCE,
+  OTHER_WORK_EXPERIENCE,
+  OTHER_EDUCATION_EXPERIENCE,
 } from '../../Skills/Skills.js';
 
 import {
@@ -62,12 +64,23 @@ const Home = () => {
             title={'WORK EXPERIENCE'}
             type="EXPERIENCE"
           />
+          <SkillsList
+            hasListStyle={true}
+            EXPERIENCE={OTHER_WORK_EXPERIENCE}
+            title={'OTHER WORK EXPERIENCE'}
+            type="EXPERIENCE"
+          />
         </ExperienceSkills>
 
         <EducationSkills>
           <SkillsList
             EXPERIENCE={EDUCATION_EXPERIENCE}
             title={'EDUCATION'}
+            type="EXPERIENCE"
+          />
+          <SkillsList
+            EXPERIENCE={OTHER_EDUCATION_EXPERIENCE}
+            title={'OTHER EDUCATION'}
             type="EXPERIENCE"
           />
         </EducationSkills>

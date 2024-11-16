@@ -21,8 +21,9 @@ export const NavLinkBox = styled.div`
 export const TechnicalSkills = styled.div`
   min-width: 195px;
   order: -1;
+
+  padding: 20px 10px;
   border-radius: 5px;
-  padding: 10px;
   text-transform: uppercase;
   box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
@@ -37,44 +38,37 @@ export const TechnicalSkills = styled.div`
 
 export const SoftSkills = styled.div`
   min-width: 195px;
-  height: 284px;
+  height: 300px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 10px;
+
+  padding: 20px 10px;
   border-radius: 5px;
-  transition: all 0.5s ease-out;
   text-transform: uppercase;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-1);
+  transition: all 0.5s ease-out;
 
   @media (max-width: 766px) {
-    /* flex-direction: row; */
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 `;
 
 export const EducationSkills = styled.div`
-  max-width: 500px;
-  padding: 10px;
+  max-width: 580px;
+  padding: 20px;
   flex: 1;
 
-  transition: all 0.5s ease-out;
   border-radius: 5px;
-  box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.5s ease-out;
 `;
-export const ExperienceSkills = styled.div`
-  max-width: 500px;
-  padding: 10px;
-  flex: 1;
 
-  transition: all 0.5s ease-out;
-  border-radius: 5px;
-  box-shadow: var(--box-shadow-1);
-  background: var(--color-theme-card);
+export const ExperienceSkills = styled(EducationSkills)`
   @media (max-width: 766px) {
     margin-bottom: 10px;
   }
