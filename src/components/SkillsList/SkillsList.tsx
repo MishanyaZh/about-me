@@ -7,6 +7,9 @@ import {
   Date,
   SKill,
   SubList,
+  Role,
+  Box,
+  Subtitle,
 } from './SkillsList.styled';
 interface IProps {
   SKILLS?: string[];
@@ -19,6 +22,7 @@ interface ExperienceTypes {
   subtitle: string;
   date: string;
   skills: string[];
+  role?: string;
 }
 
 const SkillsList = ({
@@ -41,8 +45,14 @@ const SkillsList = ({
       {type === 'EXPERIENCE' &&
         EXPERIENCE?.map((item, index) => (
           <DownPageItems key={index}>
-            <h4>[ {item.subtitle} ]</h4>
-            <Date>{item.date}</Date>
+            <Subtitle>[ {item.subtitle} ]</Subtitle>
+            {!item.role && <Date>{item.date}</Date>}
+
+            <Box hasRole={!!item.role}>
+              <Role>{item.role}</Role>
+              {!!item.role && <Date>{item.date}</Date>}
+            </Box>
+
             <CustomSubList>
               {item.skills.map((skill, index) => (
                 <SKill key={index}>{skill}</SKill>
