@@ -1,60 +1,40 @@
 import styled from '@emotion/styled';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import {
+  GitHub as GitHubIcon,
+  LinkedIn as LinkedInIcon,
+  LocalPhone as LocalPhoneIcon,
+  Email as EmailIcon,
+  LocationOn as LocationOnIcon,
+  PictureAsPdf as PictureAsPdfIcon,
+  DocumentScanner as DocumentScannerIcon,
+} from '@mui/icons-material';
+import { css } from '@emotion/react';
 
-export const CustomizedPictureAsPdfIcon = styled(PictureAsPdfIcon)`
-  margin-right: 5px;
+const BaseIconStyles = css`
   color: currentColor;
+  transition: color 0.2s ease;
   :hover {
     color: currentColor;
   }
 `;
 
-export const CustomizedLocationOnIcon = styled(LocationOnIcon)`
-  margin-right: 5px;
-  color: currentColor;
-  :hover {
-    color: currentColor;
-  }
+const StyledIcon = Icon => styled(Icon)`
+  ${BaseIconStyles}
 `;
-export const CustomizedEmailIcon = styled(EmailIcon)`
-  margin-right: 5px;
-  color: currentColor;
-  :hover {
-    color: currentColor;
-  }
-`;
-export const CustomizedLocalPhoneIcon = styled(LocalPhoneIcon)`
-  margin-right: 5px;
 
-  color: currentColor;
-  :hover {
-    color: currentColor;
-  }
-`;
-export const CustomizedGitHubIcon = styled(GitHubIcon)`
-  margin-right: 10px;
-  color: currentColor;
-  :hover {
-    color: currentColor;
-  }
-`;
-export const CustomizedLinkedInIcon = styled(LinkedInIcon)`
-  color: currentColor;
-  :hover {
-    color: currentColor;
-  }
-`;
+export const CustomizedDocumentScannerIcon = StyledIcon(DocumentScannerIcon);
+export const CustomizedPictureAsPdfIcon = StyledIcon(PictureAsPdfIcon);
+export const CustomizedLocationOnIcon = StyledIcon(LocationOnIcon);
+export const CustomizedEmailIcon = StyledIcon(EmailIcon);
+export const CustomizedLocalPhoneIcon = StyledIcon(LocalPhoneIcon);
+export const CustomizedGitHubIcon = StyledIcon(GitHubIcon);
+export const CustomizedLinkedInIcon = StyledIcon(LinkedInIcon);
 
 export const FooterContacts = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  gap: 10px;
   padding: 10px;
   transition: all 0.5s ease-out;
   border-radius: 5px;
@@ -66,23 +46,27 @@ export const FooterContacts = styled.footer`
   }
 `;
 
-export const Contacts = styled.div`
+export const ColumnFlexBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 `;
 
-export const SocialContacts = styled.div`
+export const RowFlexBox = styled.div`
   display: flex;
   flex-direction: row;
+  gap: 15px;
 `;
 
 export const LinkContacts = styled.a`
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  gap: 5px;
   text-decoration: none;
   color: var(--text-color);
+  transition: color 0.2s ease;
   :hover,
   :focus {
     color: var(--text-acc);
