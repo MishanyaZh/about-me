@@ -1,5 +1,11 @@
 export const PROJECTS = [
   {
+    subtitle: '"Navigation list"',
+    technologies: '[Next.js]',
+    link: 'https://navigation-list.vercel.app/',
+    description: 'Managing and displaying navigational links. [Dec 2024]',
+  },
+  {
     subtitle: '"Centrum Migranta"',
     technologies: '[Next.js]',
     link: 'https://migrant-center.vercel.app/',
