@@ -6,22 +6,18 @@ const MainInfo = () => {
   return (
     <MainInfoBox>
       <h1>Mykhailo Zholondkovskyi</h1>
-      <h2>JavaScript React Developer</h2>
-      <h3>Front-End | Full-Stack</h3>
+      <h2>Front-End JS/TS Developer (React / Next.js)</h2>
 
       <Img src={photo} alt="about-me-photo" />
 
       <Summary>
-        Developer with commercial experience in building interactive platforms
-        and modern web applications. Specialized in creating efficient and
-        user-friendly interfaces and solving complex UI challenges using modern
-        technologies. Actively practicing Next.js and Tailwind to further
-        enhance my professional skills. English level B2 – capable of discussing
-        project details, resolving client issues, and providing technical
-        explanations. Seeking a team where I can develop stable and functional
-        solutions that meet modern technical standards, stand out in the market,
-        generate profit, and attract new users, while continuing to grow as a
-        developer.
+        Front-End Developer with 4 years of commercial experience (5 years in
+        IT) and a total of 8+ years of experience working in Polish
+        environments. Expert in building scalable EdTech solutions using React,
+        TypeScript, and GraphQL. Proven track record of delivering high business
+        value: from attracting investors to optimizing development speed by 4x.
+        Strong cultural fit for Polish and international teams, with a focus on
+        stable, long-term product growth and AI-assisted efficiency.
       </Summary>
     </MainInfoBox>
   );

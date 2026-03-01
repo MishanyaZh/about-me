@@ -63,14 +63,17 @@ const Footer = () => {
 
         <RowFlexBox>
           <LinkContacts
-            href="https://docs.google.com/document/d/1gKiMRnZFoVd5-d3klOuEjziUP54dra6ortTnDUI_xmw/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1BpAMDXcbhHQGzvAJ_2ektW47OMA8ugcRC_5rkjcSaps/edit?usp=sharing"
             target="_blank"
           >
             <CustomizedDocumentScannerIcon />
             <span>Open CV</span>
           </LinkContacts>
 
-          <LinkContacts href="/CV_Zholondkovskyi_React.pdf" download>
+          <LinkContacts
+            href="/Mykhailo_Zholondkovskyi_Front_React.pdf"
+            download
+          >
             <CustomizedPictureAsPdfIcon />
             <span>Download CV</span>
           </LinkContacts>

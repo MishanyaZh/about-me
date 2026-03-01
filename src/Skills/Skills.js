@@ -1,37 +1,43 @@
 export const TECHNICAL_SKILLS = [
-  'JavaScript',
-  'TypeScript',
+  'TS/JS',
   'React',
-  'Next',
-  'Vue',
-  'Node',
-  'Graphql',
+  'Next.js',
+  'Redux',
+  'Context API',
+  'SSR',
+  'App Router',
+  'Server Components',
+  'GraphQL ',
   'REST API',
-  'GIT, GitHub',
-  'Redux, Context',
-  'HTML, CSS',
-  'Styled components',
-  'Tailwindcss',
-  'NPM, Yarn',
+  'WebSockets',
+  'Material UI ',
+  'Chart.js',
+  'Emotion',
+  'Tailwind CSS',
+  'React Hook Form',
+  'Git, GitHub',
+  'Webpack',
+  'GitHub Copilot',
+  'AI-assisted workflows',
+  'Code Reviews',
   'ClickUp, Slack',
-  'Figma, Miro',
-  'Photoshop, Corel',
+  'Miro, Figma',
 ];
 
 export const SOFT_SKILLS = [
   'Team player',
-  'Disciplined',
   'Motivated',
-  'Communication',
   'Scrum',
   'Agile',
+  'Problem solving',
+  'Ownership mindset',
 ];
 
 export const LANGUAGES = [
-  'Polish - B2',
+  'Polish - Fluent',
   'English - B2',
-  'Ukrainian - C2',
-  'Russian - C2',
+  'Ukrainian - Native',
+  'Russian - Native',
 ];
 
 export const EDUCATION_EXPERIENCE = [
@@ -73,33 +79,35 @@ export const OTHER_EDUCATION_EXPERIENCE = [
 
 export const WORK_EXPERIENCE = [
   {
-    subtitle: '"Learning-Space Sp. z o..o." | "Digital Creative Cluster"',
-    role: 'Frontend React Developer',
-    date: '(Jun 2022 - present)',
+    subtitle: '"Digital Creative Cluster" | "Learning-Space Sp. z o..o."',
+    role: 'Front-End JavaScript / React Developer',
+    date: '(Jun 2022 - Present)',
     skills: [
-      'Process Optimization: Developed custom hooks and optimized code to avoid duplication, which reduced development time by 40% and streamlined scalability for future updates.',
-      'Feature Expansion & User Experience: Designed a multi-step course generator and payment flow generator, accelerating content creation for users by 4 times. Additionally, developed features for tracking student progress and displaying comprehensive course statistics, enabling instructors to monitor performance across individual and multiple courses.',
-      'Sales and Analytics: Developed components for sales tracking and data analytics, allowing users to view real-time statistics on product performance and customer engagement.',
-      'Content Management Solutions: Configured Webpack for front-end content storage (logos, regulations) used in email distribution, eliminating the need for paid third-party resources and saving company expenses.',
-      'Client Acquisition & Project Growth: Developed and delivered critical project features on time, which contributed to the acquisition of 3 new clients and investors, securing funding for further development.',
-      'Localization & User Customization: Implemented multi-language support (en, pl, it) and customized content spaces for different user needs, enhancing the platforms flexibility and expanding the target audience.',
-      'Enhanced Front-End Frameworks: Led the upgrade of Material UI from versions 4-5 to 6-7, enabling the use of the latest features and improving UI consistency across the application.',
-      'Team Collaboration & Quality Control: Conducted regular code reviews to maintain high-quality standards and prevent production issues, assisting new team members with onboarding and ensuring efficient integration into the development process.',
+      'Created around 50% of front-end functionality for a complex educational ecosystem and supported the platform growth from startup to mature product.',
+      'Delivered critical features that helped secure 3 major clients and investors, improving business scalability.',
+      'Engineered a content repository module for lessons, exams, and events reuse; built multi-step course and payment flow generators that accelerated content creation by 4x.',
+      'Built subscription and payment dashboard features to automate billing and improve paid-user UX.',
+      'Developed real-time analytics dashboards with Chart.js and DnD widgets for student/teacher progress tracking.',
+      'Implemented and maintained i18n (PL, EN, ES, IT) with dynamic language switching and AI-assisted translation workflows.',
+      'Optimized internal asset management and Webpack configuration to reduce third-party costs.',
+      'Led progressive migration of legacy components to TypeScript and updated Material UI to modern versions with AI-assisted refactoring.',
+      'Integrated WebSockets (Mercure) for instant notifications and live platform activity.',
+      'Improved team velocity by 20-30% using GitHub Copilot and LLM tools; actively participated in Agile ceremonies, estimation, onboarding, and code reviews.',
     ],
   },
   {
-    subtitle: 'Developer experience',
-    date: '(Jul 2020 - present)',
-    role: 'Full-Stack React Developer',
+    subtitle: 'Personal Projects',
+    date: '(Jul 2020 - Present)',
+    role: 'Front-End JavaScript Developer (React / Next.js)',
     skills: [
-      'I create and deploy web applications, handling everything from database integration to user interface development, and also develop custom web solutions',
+      'Developed modern applications with Next.js 14/15 (App Router, Server Components) to master SSR, SEO optimization, and high-performance React patterns.',
     ],
   },
 ];
 
 export const OTHER_WORK_EXPERIENCE = [
   {
-    subtitle: 'Faurecia"| "Forvia',
+    subtitle: 'Faurecia | Forvia',
     date: '(2018 - 2022)',
     role: 'Operator',
     skills: [
