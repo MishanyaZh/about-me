@@ -71,7 +71,7 @@ const Footer = () => {
           </LinkContacts>
 
           <LinkContacts
-            href="/Mykhailo_Zholondkovskyi_Front_React.pdf"
+            href="/Mykhailo_Zholondkovskyi_Frontend_React_dev.pdf"
             download
           >
             <CustomizedPictureAsPdfIcon />

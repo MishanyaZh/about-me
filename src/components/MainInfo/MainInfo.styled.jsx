@@ -34,7 +34,7 @@ export const SummarySkills = styled.span`
 `;
 
 export const Img = styled.img`
-  width: 250px;
+  width: auto;
   height: 325px;
   margin: 0 auto;
   margin-top: 10px;
