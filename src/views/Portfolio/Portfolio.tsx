@@ -1,43 +1,65 @@
-import React, { useState, useEffect } from 'react';
-import { PROJECTS } from '../../Skills/projects';
+import React, { useEffect, useMemo, useState } from 'react';
+import { ALL_FILTER, FEATURED_PROJECTS, PROJECTS } from '../../Skills/projects';
 import FilterButtons from '../../components/Projects/FilterButtons/FilterButtons';
 import ProjectsList from '../../components/Projects/ProjectsList';
+import PortfolioViewSwitcher, {
+  PortfolioView,
+} from '../../components/Projects/ViewSwitcher/PortfolioViewSwitcher';
 
-import { Title } from './Portfolio.styled';
+import { EmptyState, Title, ViewSwitcherWrapper } from './Portfolio.styled';
 import { NavLinkBox } from '../Home/Home.styled';
 import { NavigationNavLink } from '../../components/Navigation/Navigation.styled';
 
-type fn = (EventTarget: {
-  target: {
-    name: string;
-  };
-}) => void;
-
 const Portfolio = () => {
-  const [allProjects, setAllProjects] = useState(PROJECTS);
-  const [filteredProjects, setFilteredProjects] = useState(allProjects);
+  const [portfolioView, setPortfolioView] = useState<PortfolioView>('featured');
+  const [selectedFilter, setSelectedFilter] = useState(ALL_FILTER);
+
+  const baseProjects = useMemo(
+    () => (portfolioView === 'all' ? PROJECTS : FEATURED_PROJECTS),
+    [portfolioView],
+  );
+
+  const filteredProjects = useMemo(() => {
+    if (selectedFilter === ALL_FILTER) {
+      return baseProjects;
+    }
+
+    return baseProjects.filter(item =>
+      item.technologies.includes(selectedFilter),
+    );
+  }, [baseProjects, selectedFilter]);
 
   useEffect(() => {
-    setAllProjects(PROJECTS);
     window.scrollTo(0, 0);
   }, []);
 
-  const handlerButtonGroupSwitch: fn = EventTarget => {
-    const currentButton = EventTarget.target.name;
-    if (currentButton === 'All') {
-      setFilteredProjects(allProjects);
-      return;
-    }
-    setFilteredProjects(
-      PROJECTS.filter(item => item.technologies.includes(currentButton)),
-    );
-  };
+  useEffect(() => {
+    setSelectedFilter(ALL_FILTER);
+  }, [portfolioView]);
 
   return (
     <>
       <Title>Portfolio</Title>
-      <FilterButtons handlerButtonGroupSwitch={handlerButtonGroupSwitch} />
-      <ProjectsList PROJECTS={filteredProjects} />
+      <ViewSwitcherWrapper>
+        <PortfolioViewSwitcher
+          value={portfolioView}
+          onChange={setPortfolioView}
+        />
+      </ViewSwitcherWrapper>
+      {baseProjects.length > 0 && (
+        <FilterButtons
+          onChange={setSelectedFilter}
+          selectedFilter={selectedFilter}
+          projects={baseProjects}
+        />
+      )}
+      {filteredProjects.length === 0 ? (
+        <EmptyState>
+          Featured projects list is empty. Add links in FEATURED_PROJECT_LINKS.
+        </EmptyState>
+      ) : (
+        <ProjectsList PROJECTS={filteredProjects} />
+      )}
       <NavLinkBox>
         <NavigationNavLink to="/">Home</NavigationNavLink>
       </NavLinkBox>

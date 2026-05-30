@@ -17,6 +17,9 @@
   --color-theme: rgb(27, 27, 27);
   --text-color-white: #fff;
   --text-color: rgb(25, 118, 210);
+  --text-color-alpha-50: rgba(25, 118, 210, 0.5);
+  --text-color-alpha-12: rgba(25, 118, 210, 0.12);
+  --text-color-alpha-20: rgba(25, 118, 210, 0.2);
   --text-color-2: rgb(131, 133, 143);
   --text-acc: rgb(63, 199, 0);
 
@@ -34,6 +37,9 @@
 html[data-theme='light'] {
   --color-theme: rgb(157, 180, 207);
   --text-color: rgb(18, 26, 75);
+  --text-color-alpha-50: rgba(18, 26, 75, 0.5);
+  --text-color-alpha-12: rgba(18, 26, 75, 0.12);
+  --text-color-alpha-20: rgba(18, 26, 75, 0.2);
   --text-color-2: rgb(5, 5, 5);
   --text-acc: rgb(185, 72, 6);
 
@@ -49,6 +55,9 @@ html[data-theme='light'] {
 html[data-theme='dark'] {
   --color-theme: rgb(27, 27, 27);
   --text-color: rgb(25, 118, 210);
+  --text-color-alpha-50: rgba(25, 118, 210, 0.5);
+  --text-color-alpha-12: rgba(25, 118, 210, 0.12);
+  --text-color-alpha-20: rgba(25, 118, 210, 0.2);
   --text-color-2: rgb(131, 133, 143);
   --text-acc: rgb(63, 199, 0);
 

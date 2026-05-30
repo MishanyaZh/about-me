@@ -1,31 +1,44 @@
 export const PROJECTS = [
   {
+    subtitle: '"Shape Up"',
+    technologies: '[React.js, Next.js]',
+    link: 'https://shape-up-gamma.vercel.app/',
+    description: 'Smart Meal & Workout Planner. [Feb 2025]',
+  },
+  {
+    subtitle: '"Dom Rem Bud"',
+    technologies: '[React.js, Next.js]',
+    link: 'https://dom-rem-bud.vercel.app/',
+    description:
+      'Professional interior finishing, renovations and modernizations. [Jul 2025]',
+  },
+  {
     subtitle: '"Navigation list"',
-    technologies: '[Next.js]',
+    technologies: '[React.js, Next.js]',
     link: 'https://navigation-list.vercel.app/',
     description: 'Managing and displaying navigational links. [Dec 2024]',
   },
   {
     subtitle: '"Centrum Migranta"',
-    technologies: '[Next.js]',
+    technologies: '[React.js, Next.js]',
     link: 'https://migrant-center.vercel.app/',
     description: 'Commercial website Migrant Center. (in progress) [Oct 2024]',
   },
   {
     subtitle: '"Auto-Service"',
-    technologies: '[Next.js]',
+    technologies: '[React.js, Next.js]',
     link: 'https://auto-service-vm.vercel.app/',
     description: 'Commercial website Auto service. (in progress) [Aug 2024]',
   },
   {
     subtitle: '"IMDb-Clone"',
-    technologies: '[Next.js]',
+    technologies: '[React.js, Next.js]',
     link: 'https://imdb-next-orcin.vercel.app/',
     description: 'IMDb Clone using next js and tailwind css. [Jul 2024]',
   },
   {
     subtitle: '"CRM-for-vendors"',
-    technologies: '[Next.js]',
+    technologies: '[React.js, Next.js]',
     link: 'https://crm-seven-gold.vercel.app',
     description: 'Admin panel for food delivery company. [May 2024]',
   },
@@ -140,4 +153,36 @@ export const PROJECTS = [
   },
 ];
 
-export const buttonsName = ['All', 'React', 'Next', 'Vue', 'BE', 'JS', 'Html'];
+export const FEATURED_PROJECT_LINKS = [
+  'https://shape-up-gamma.vercel.app/',
+  'https://dom-rem-bud.vercel.app/',
+  'https://migrant-center.vercel.app/',
+  'https://imdb-next-orcin.vercel.app/',
+  'https://crm-seven-gold.vercel.app/',
+  'https://mishanyazh.github.io/-team-project-JS-Filmoteka/',
+  'https://auto-service-vm.vercel.app/',
+  'https://bogdanbon.github.io/team-project/',
+  'https://zhm-irregular-verbs.netlify.app',
+  'https://mishanyazh.github.io/my-resyme-js/',
+];
+
+const normalizeLink = link => link.replace(/\/$/, '');
+const FEATURED_PROJECT_LINK_SET = new Set(
+  FEATURED_PROJECT_LINKS.map(normalizeLink),
+);
+
+export const FEATURED_PROJECTS = PROJECTS.filter(project =>
+  FEATURED_PROJECT_LINK_SET.has(normalizeLink(project.link)),
+);
+
+export const ALL_FILTER = 'All';
+
+export const buttonsName = [
+  ALL_FILTER,
+  'React',
+  'Next',
+  'Vue',
+  'BE',
+  'JS',
+  'Html',
+];

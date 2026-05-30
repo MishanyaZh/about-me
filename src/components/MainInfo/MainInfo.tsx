@@ -11,13 +11,13 @@ const MainInfo = () => {
       <Img src={photo} alt="about-me-photo" />
 
       <Summary>
-        Front-End Developer with 4 years of commercial experience (5 years in
-        IT) and a total of 8+ years of experience working in Polish
-        environments. Expert in building scalable EdTech solutions using React,
-        TypeScript, and GraphQL. Proven track record of delivering high business
-        value: from attracting investors to optimizing development speed by 4x.
-        Strong cultural fit for Polish and international teams, with a focus on
-        stable, long-term product growth and AI-assisted efficiency.
+        Frontend Developer with 4 years of commercial experience and 5 years in
+        software development overall, including 8+ years of working in Polish
+        environments. Specialized in building scalable EdTech solutions using
+        React, Next.js, TypeScript, and GraphQL. Delivered high-impact features
+        including course generation systems, subscription management, and
+        analytics dashboards, accelerating content creation by 4x and improving
+        development velocity by 20–30% through AI-assisted development.
       </Summary>
     </MainInfoBox>
   );

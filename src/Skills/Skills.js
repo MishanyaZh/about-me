@@ -79,20 +79,21 @@ export const OTHER_EDUCATION_EXPERIENCE = [
 
 export const WORK_EXPERIENCE = [
   {
-    subtitle: '"Digital Creative Cluster" | "Learning-Space Sp. z o..o."',
-    role: 'Front-End JavaScript / React Developer',
-    date: '(Jun 2022 - Present)',
+    subtitle: '"Digital Creative Cluster" | "Learning-Space Sp. z o.o."',
+    role: 'Frontend React Developer',
+    date: '(June 2022 - Present)',
     skills: [
-      'Created around 50% of front-end functionality for a complex educational ecosystem and supported the platform growth from startup to mature product.',
-      'Delivered critical features that helped secure 3 major clients and investors, improving business scalability.',
-      'Engineered a content repository module for lessons, exams, and events reuse; built multi-step course and payment flow generators that accelerated content creation by 4x.',
-      'Built subscription and payment dashboard features to automate billing and improve paid-user UX.',
-      'Developed real-time analytics dashboards with Chart.js and DnD widgets for student/teacher progress tracking.',
-      'Implemented and maintained i18n (PL, EN, ES, IT) with dynamic language switching and AI-assisted translation workflows.',
-      'Optimized internal asset management and Webpack configuration to reduce third-party costs.',
-      'Led progressive migration of legacy components to TypeScript and updated Material UI to modern versions with AI-assisted refactoring.',
-      'Integrated WebSockets (Mercure) for instant notifications and live platform activity.',
-      'Improved team velocity by 20-30% using GitHub Copilot and LLM tools; actively participated in Agile ceremonies, estimation, onboarding, and code reviews.',
+      'Created approximately 50% of the project front-end functionality for a complex educational ecosystem and supported platform growth from startup to mature product.',
+      'Delivered critical features that helped secure 3 new major clients and investors, ensuring financial scalability.',
+      'Engineered a content repository module to reuse lessons, exams, and events across courses; built a multi-step course generator and payment flow generator, accelerating content creation by 4x.',
+      'Built a complex Subscription Manager and payment dashboard, automating billing and improving paid-user UX.',
+      'Developed interactive analytics dashboards with Chart.js and DnD widgets for real-time student and teacher progress tracking.',
+      'Implemented and managed i18n support (PL, EN, ES, IT) with dynamic language switching and AI-assisted translation workflows.',
+      'Optimized internal asset management and Webpack configuration, reducing third-party service costs.',
+      'Led progressive migration of legacy components to TypeScript and updated Material UI to modern versions, using AI-assisted refactoring to speed up transition.',
+      'Integrated WebSockets (Mercure) for instant user notifications and live platform activity.',
+      'Leveraged GitHub Copilot and LLM tools to automate routine tasks, improving development velocity by ~20-30%.',
+      'Actively participated in Agile/Scrum ceremonies, collaborated on architecture in Miro and estimation in ClickUp, onboarded new developers, and maintained quality through code reviews.',
     ],
   },
   {
@@ -100,7 +101,7 @@ export const WORK_EXPERIENCE = [
     date: '(Jul 2020 - Present)',
     role: 'Front-End JavaScript Developer (React / Next.js)',
     skills: [
-      'Developed modern applications with Next.js 14/15 (App Router, Server Components) to master SSR, SEO optimization, and high-performance React patterns.',
+      'Developed several modern web applications with Next.js 14/15 (App Router, Server Components) to master SSR, SEO optimization, and high-performance React patterns.',
     ],
   },
 ];

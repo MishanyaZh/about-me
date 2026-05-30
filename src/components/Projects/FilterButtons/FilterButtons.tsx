@@ -1,19 +1,44 @@
-import React, { useEffect, useState } from 'react';
-import { buttonsName } from '../../../Skills/projects';
-import { Button, ButtonGroup, Box } from '@mui/material';
+import React, { MouseEvent, useEffect, useMemo, useState } from 'react';
+import { ALL_FILTER, buttonsName } from '../../../Skills/projects';
+import { Box, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { sharedToggleButtonGroupSx } from '../sharedToggleButtonSx';
+
+interface ProjectItem {
+  technologies: string;
+}
 
 interface FilterButtonsInterface {
-  handlerButtonGroupSwitch: (EventTarget: {
-    target: {
-      name: string;
-    };
-  }) => void;
+  onChange: (filterName: string) => void;
+  selectedFilter: string;
+  projects: ProjectItem[];
 }
 
 const FilterButtons = ({
-  handlerButtonGroupSwitch,
+  onChange,
+  selectedFilter,
+  projects,
 }: FilterButtonsInterface) => {
   const [width, setWidth] = useState(window.outerWidth);
+
+  const visibleButtons = useMemo(
+    () =>
+      buttonsName.filter(
+        button =>
+          button === ALL_FILTER ||
+          projects.some(project => project.technologies.includes(button)),
+      ),
+    [projects],
+  );
+
+  const handleFilterChange = (
+    _: MouseEvent<HTMLElement>,
+    nextFilter: string | null,
+  ) => {
+    if (!nextFilter) {
+      return;
+    }
+    onChange(nextFilter);
+  };
 
   useEffect(() => {
     const widthChangeEvent = () => {
@@ -24,25 +49,25 @@ const FilterButtons = ({
     return () => {
       window.removeEventListener('resize', widthChangeEvent);
     };
-  }, [width]);
+  }, []);
 
   return (
     <>
       <Box sx={{ textAlign: 'center' }}>
-        <ButtonGroup<any>
-          sx={{ boxShadow: 'var(--box-shadow-2)', maxWidth: '99%' }}
-          onClick={handlerButtonGroupSwitch}
+        <ToggleButtonGroup
+          value={selectedFilter}
+          exclusive
+          onChange={handleFilterChange}
           size={width < 425 ? 'small' : 'medium'}
-          variant="outlined"
-          aria-label="outlined button group"
-          component={undefined}
+          aria-label="technology filters"
+          sx={sharedToggleButtonGroupSx}
         >
-          {buttonsName.map((button, index) => (
-            <Button key={index} name={button}>
+          {visibleButtons.map(button => (
+            <ToggleButton key={button} value={button} aria-label={button}>
               {button}
-            </Button>
+            </ToggleButton>
           ))}
-        </ButtonGroup>
+        </ToggleButtonGroup>
       </Box>
     </>
   );
