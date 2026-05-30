@@ -2,7 +2,7 @@ import React from 'react';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { sharedToggleButtonGroupSx } from '../sharedToggleButtonSx';
 
-export type PortfolioView = 'all' | 'featured';
+export type PortfolioView = 'all' | 'featured' | 'commercial';
 
 interface PortfolioViewSwitcherProps {
   value: PortfolioView;
@@ -31,6 +31,9 @@ const PortfolioViewSwitcher = ({
       aria-label="portfolio view switcher"
       sx={sharedToggleButtonGroupSx}
     >
+      <ToggleButton value="commercial" aria-label="commercial projects">
+        Commercial
+      </ToggleButton>
       <ToggleButton value="featured" aria-label="featured projects">
         Featured
       </ToggleButton>

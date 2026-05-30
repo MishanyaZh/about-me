@@ -1,5 +1,12 @@
 export const PROJECTS = [
   {
+    subtitle: '"Learning Space"',
+    technologies: '[React.js]',
+    link: 'https://learningspace.app/en/',
+    description:
+      'Large EdTech platform for educational organizations. Frontend Engineer in the product team.',
+  },
+  {
     subtitle: '"Shape Up"',
     technologies: '[React.js, Next.js]',
     link: 'https://shape-up-gamma.vercel.app/',
@@ -10,7 +17,7 @@ export const PROJECTS = [
     technologies: '[React.js, Next.js]',
     link: 'https://dom-rem-bud.vercel.app/',
     description:
-      'Professional interior finishing, renovations and modernizations. [Jul 2025]',
+      'Commercial website. Apartment renovations. [Jul 2025 in progress]',
   },
   {
     subtitle: '"Navigation list"',
@@ -22,14 +29,13 @@ export const PROJECTS = [
     subtitle: '"Centrum Migranta"',
     technologies: '[React.js, Next.js]',
     link: 'https://migrant-center.vercel.app/',
-    description: 'Commercial website Migrant Center. (in progress) [Oct 2024]',
+    description: 'Commercial website. Migrant Center. [Oct 2024 in progress]',
   },
   {
     subtitle: '"Auto-Service"',
     technologies: '[React.js, Next.js]',
     link: 'https://auto-service-vm.vercel.app/',
-    description:
-      'Commercial website for an auto service. (in progress) [Aug 2024]',
+    description: 'Commercial website. Auto service. [Aug 2024 in progress]',
   },
   {
     subtitle: '"IMDb-Clone"',
@@ -155,6 +161,7 @@ export const PROJECTS = [
 ];
 
 export const FEATURED_PROJECT_LINKS = [
+  'https://learningspace.app/en/',
   'https://shape-up-gamma.vercel.app/',
   'https://dom-rem-bud.vercel.app/',
   'https://migrant-center.vercel.app/',
@@ -175,6 +182,38 @@ const FEATURED_PROJECT_LINK_SET = new Set(
 export const FEATURED_PROJECTS = PROJECTS.filter(project =>
   FEATURED_PROJECT_LINK_SET.has(normalizeLink(project.link)),
 );
+
+export const COMMERCIAL_PROJECT_LINKS = [
+  'https://dom-rem-bud.vercel.app/',
+  'https://migrant-center.vercel.app/',
+  'https://auto-service-vm.vercel.app/',
+];
+
+export const COMMERCIAL_BADGE_LINKS = [
+  'https://learningspace.app/en/',
+  ...COMMERCIAL_PROJECT_LINKS,
+];
+
+const COMMERCIAL_PROJECT_LINK_SET = new Set(
+  COMMERCIAL_PROJECT_LINKS.map(normalizeLink),
+);
+
+export const COMMERCIAL_PROJECTS = PROJECTS.filter(project =>
+  COMMERCIAL_PROJECT_LINK_SET.has(normalizeLink(project.link)),
+);
+
+export const LEARNING_SPACE_CASE = {
+  title: 'Learning Space',
+  summary:
+    'Large EdTech platform for educational organizations. I contributed as a Frontend Engineer in the product team over 4 years.',
+  overviewLink: 'https://learningspace.app/en/',
+  platformLink: 'https://my.learningspace.app/',
+  highlights: [
+    'Commercial product with multi-year team development.',
+    'Frontend implementation in collaboration with product and engineering teams.',
+    'Public platform overview and product access links are available below.',
+  ],
+};
 
 export const ALL_FILTER = 'All';
 

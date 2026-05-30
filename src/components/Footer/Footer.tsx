@@ -6,6 +6,7 @@ import {
   LinkContacts,
   CustomizedGitHubIcon,
   CustomizedLinkedInIcon,
+  CustomizedTelegramIcon,
   CustomizedLocalPhoneIcon,
   CustomizedEmailIcon,
   CustomizedLocationOnIcon,
@@ -30,9 +31,21 @@ const Footer = () => {
 
       <RowFlexBox>
         <LinkContacts
+          href="https://t.me/Mishanya_Zh"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Telegram profile"
+        >
+          <CustomizedTelegramIcon
+            sx={{ color: 'var(--text-color)' }}
+            fontSize="large"
+          />
+        </LinkContacts>
+        <LinkContacts
           href="https://github.com/MishanyaZh"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub profile"
         >
           <CustomizedGitHubIcon
             sx={{ color: 'var(--text-color)' }}
@@ -43,6 +56,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/m-zholondkovskyi"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
         >
           <CustomizedLinkedInIcon
             sx={{ color: 'var(--text-color)' }}

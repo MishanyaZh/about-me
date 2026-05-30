@@ -16,6 +16,9 @@
 :root {
   --color-theme: rgb(27, 27, 27);
   --text-color-white: #fff;
+  --case-text-color: #fff;
+  --case-gradient-start: rgb(0, 7, 61);
+  --case-gradient-end: rgb(22, 11, 11);
   --text-color: rgb(25, 118, 210);
   --text-color-alpha-50: rgba(25, 118, 210, 0.5);
   --text-color-alpha-12: rgba(25, 118, 210, 0.12);
@@ -36,6 +39,9 @@
 
 html[data-theme='light'] {
   --color-theme: rgb(157, 180, 207);
+  --case-text-color: rgb(18, 26, 75);
+  --case-gradient-start: rgb(124, 152, 214);
+  --case-gradient-end: rgb(208, 220, 245);
   --text-color: rgb(18, 26, 75);
   --text-color-alpha-50: rgba(18, 26, 75, 0.5);
   --text-color-alpha-12: rgba(18, 26, 75, 0.12);
@@ -54,6 +60,9 @@ html[data-theme='light'] {
 /* default theme = 'dark' */
 html[data-theme='dark'] {
   --color-theme: rgb(27, 27, 27);
+  --case-text-color: #fff;
+  --case-gradient-start: rgb(0, 7, 61);
+  --case-gradient-end: rgb(22, 11, 11);
   --text-color: rgb(25, 118, 210);
   --text-color-alpha-50: rgba(25, 118, 210, 0.5);
   --text-color-alpha-12: rgba(25, 118, 210, 0.12);

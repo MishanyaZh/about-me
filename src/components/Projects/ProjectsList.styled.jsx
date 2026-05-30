@@ -27,6 +27,7 @@ export const Item = styled.li`
   max-width: 250px;
   padding: 12px 10px;
   border-radius: 5px;
+  border: 1px solid transparent;
   box-shadow: var(--box-shadow-2);
   background: var(--color-theme-card);
   transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out,
@@ -44,6 +45,23 @@ export const Item = styled.li`
     background: var(--hover-theme-card);
     transition: 0.5s ease padding-top, 0.5s ease width;
   }
+
+  &[data-commercial='true'] {
+    border-color: var(--text-acc);
+    box-shadow: 0 0 0 1px var(--text-color-alpha-20), var(--box-shadow-2);
+  }
+
+  &[data-commercial='true']::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--text-acc), var(--text-color));
+    z-index: 2;
+  }
+
   &:hover {
     &:before {
       width: 150%;
@@ -77,6 +95,21 @@ export const Item = styled.li`
 export const Link = styled.a`
   text-decoration: none;
   color: var(--text-acc);
+`;
+
+export const CommercialBadge = styled.span`
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--text-color-alpha-50);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-acc);
+  background: var(--text-color-alpha-12);
+  z-index: 2;
 `;
 
 export const ActionLink = styled.a`

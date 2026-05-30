@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import {
   GitHub as GitHubIcon,
   LinkedIn as LinkedInIcon,
+  Telegram as TelegramIcon,
   LocalPhone as LocalPhoneIcon,
   Email as EmailIcon,
   LocationOn as LocationOnIcon,
@@ -29,6 +30,7 @@ export const CustomizedEmailIcon = StyledIcon(EmailIcon);
 export const CustomizedLocalPhoneIcon = StyledIcon(LocalPhoneIcon);
 export const CustomizedGitHubIcon = StyledIcon(GitHubIcon);
 export const CustomizedLinkedInIcon = StyledIcon(LinkedInIcon);
+export const CustomizedTelegramIcon = StyledIcon(TelegramIcon);
 
 export const FooterContacts = styled.footer`
   display: flex;
