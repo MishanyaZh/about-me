@@ -36,7 +36,7 @@ export const FooterContacts = styled.footer`
   align-items: center;
   gap: 10px;
   padding: 10px;
-  transition: all 0.5s ease-out;
+  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
   border-radius: 5px;
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-1);

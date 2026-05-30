@@ -8,7 +8,7 @@ const MainInfo = () => {
       <h1>Mykhailo Zholondkovskyi</h1>
       <h2>Front-End JS/TS Developer (React / Next.js)</h2>
 
-      <Img src={photo} alt="about-me-photo" />
+      <Img src={photo} alt="Portrait of Mykhailo Zholondkovskyi" />
 
       <Summary>
         Frontend Developer with 4 years of commercial experience and 5 years in

@@ -4,7 +4,7 @@ import {
   Item,
   List,
   Link,
-  Button,
+  ActionLink,
   Span,
   TitleCard,
   Technologies,
@@ -24,27 +24,22 @@ interface IProjects {
 const ProjectsList = ({ PROJECTS }: IProps) => {
   return (
     <List>
-      {PROJECTS.map((item, index) => (
-        <Item key={index}>
-          <Link
-            href={item.link}
-            // alt={item.subtitle}
-            target="_blank"
-            rel="noreferrer"
-          >
+      {PROJECTS.map(item => (
+        <Item key={item.link}>
+          <Link href={item.link} target="_blank" rel="noopener noreferrer">
             <TitleCard>{item.subtitle}</TitleCard>
           </Link>
 
           <Technologies>{item.technologies}</Technologies>
 
-          <Link
+          <ActionLink
             href={item.link}
-            // alt={item.subtitle}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            data-project-action="true"
           >
-            <Button>Open</Button>
-          </Link>
+            Open
+          </ActionLink>
 
           <Span>{item.description}</Span>
         </Item>

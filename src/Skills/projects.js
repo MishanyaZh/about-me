@@ -16,7 +16,7 @@ export const PROJECTS = [
     subtitle: '"Navigation list"',
     technologies: '[React.js, Next.js]',
     link: 'https://navigation-list.vercel.app/',
-    description: 'Managing and displaying navigational links. [Dec 2024]',
+    description: 'Navigation links management and display. [Dec 2024]',
   },
   {
     subtitle: '"Centrum Migranta"',
@@ -28,13 +28,14 @@ export const PROJECTS = [
     subtitle: '"Auto-Service"',
     technologies: '[React.js, Next.js]',
     link: 'https://auto-service-vm.vercel.app/',
-    description: 'Commercial website Auto service. (in progress) [Aug 2024]',
+    description:
+      'Commercial website for an auto service. (in progress) [Aug 2024]',
   },
   {
     subtitle: '"IMDb-Clone"',
     technologies: '[React.js, Next.js]',
     link: 'https://imdb-next-orcin.vercel.app/',
-    description: 'IMDb Clone using next js and tailwind css. [Jul 2024]',
+    description: 'IMDb clone using Next.js and Tailwind CSS. [Jul 2024]',
   },
   {
     subtitle: '"CRM-for-vendors"',
@@ -46,7 +47,7 @@ export const PROJECTS = [
     subtitle: '"Irregular-verbs"',
     technologies: '[React.js]',
     link: 'https://zhm-irregular-verbs.netlify.app',
-    description: 'Education page, for learn irregular verbs. [Oct 2022]',
+    description: 'Educational app for learning irregular verbs. [Oct 2022]',
   },
   {
     subtitle: '"Courses"',
@@ -76,7 +77,7 @@ export const PROJECTS = [
   {
     subtitle: '"Movies"',
     technologies: '[React.js]',
-    link: 'http://zhm-goit-react-hw-04-movies.netlify.app',
+    link: 'https://zhm-goit-react-hw-04-movies.netlify.app',
     description: 'Movie search service. [Sep 2021]',
   },
   {
@@ -107,7 +108,7 @@ export const PROJECTS = [
     subtitle: '"Graphql-project-db"',
     technologies: '[JS, BE, Graphql]',
     link: 'https://github.com/MishanyaZh/graph-project',
-    description: 'Db for library, use graphql, apollo. [June 2022]',
+    description: 'Library database built with GraphQL and Apollo. [Jun 2022]',
   },
   {
     subtitle: '"WebStudio"',
@@ -143,7 +144,7 @@ export const PROJECTS = [
     subtitle: '"Personal-library"',
     technologies: '[React.js, Graphql]',
     link: 'https://github.com/MishanyaZh/personal-library/tree/main/src',
-    description: 'Personal-library-App". (heroku db) [June 2022]',
+    description: 'Personal library app. (Heroku DB) [Jun 2022]',
   },
   {
     subtitle: '"Kapu$ta"',

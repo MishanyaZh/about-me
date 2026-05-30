@@ -7,8 +7,8 @@ import logo from '../../images/react.svg';
 const Navigation = () => {
   return (
     <Nav className="Navigation">
-      <NavLink to="/">
-        <Logo src={logo} alt="Logo" />
+      <NavLink to="/" aria-label="Go to home page">
+        <Logo src={logo} alt="Animated React logo" />
       </NavLink>
       <NavigationNavLink to="/">Home</NavigationNavLink>
       <NavigationNavLink to="/portfolio">Portfolio</NavigationNavLink>

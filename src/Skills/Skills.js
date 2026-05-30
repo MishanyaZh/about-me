@@ -7,10 +7,10 @@ export const TECHNICAL_SKILLS = [
   'SSR',
   'App Router',
   'Server Components',
-  'GraphQL ',
+  'GraphQL',
   'REST API',
   'WebSockets',
-  'Material UI ',
+  'Material UI',
   'Chart.js',
   'Emotion',
   'Tailwind CSS',
@@ -29,12 +29,12 @@ export const SOFT_SKILLS = [
   'Motivated',
   'Scrum',
   'Agile',
-  'Problem solving',
+  'Problem-solving',
   'Ownership mindset',
 ];
 
 export const LANGUAGES = [
-  'Polish - Fluent',
+  'Polish - C1',
   'English - B2',
   'Ukrainian - Native',
   'Russian - Native',
@@ -55,7 +55,7 @@ export const EDUCATION_EXPERIENCE = [
   {
     subtitle: 'Policealna Szkoła Zawodowa "Eduatut"',
     date: '(2018 - 2020)',
-    skills: ['IT specialist'],
+    skills: ['IT Specialist'],
   },
 ];
 
@@ -73,7 +73,7 @@ export const OTHER_EDUCATION_EXPERIENCE = [
   {
     subtitle: 'Course "Graphic designer"',
     date: '(2019)',
-    skills: ['Photoshop, Corel'],
+    skills: ['Photoshop, CorelDRAW'],
   },
 ];
 
@@ -99,7 +99,7 @@ export const WORK_EXPERIENCE = [
   {
     subtitle: 'Personal Projects',
     date: '(Jul 2020 - Present)',
-    role: 'Front-End JavaScript Developer (React / Next.js)',
+    role: 'Frontend JavaScript Developer (React / Next.js)',
     skills: [
       'Developed several modern web applications with Next.js 14/15 (App Router, Server Components) to master SSR, SEO optimization, and high-performance React patterns.',
     ],

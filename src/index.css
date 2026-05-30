@@ -83,7 +83,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-theme);
   color: var(--text-color);
-  transition: all 0.5s ease-out;
+  transition: background-color 0.35s ease-out, color 0.35s ease-out;
 }
 
 code {
@@ -109,4 +109,15 @@ h3,
 h4,
 h5 {
   margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

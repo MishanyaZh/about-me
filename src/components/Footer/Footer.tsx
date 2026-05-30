@@ -32,7 +32,7 @@ const Footer = () => {
         <LinkContacts
           href="https://github.com/MishanyaZh"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <CustomizedGitHubIcon
             sx={{ color: 'var(--text-color)' }}
@@ -40,9 +40,9 @@ const Footer = () => {
           />
         </LinkContacts>
         <LinkContacts
-          href="http://www.linkedin.com/in/m-zholondkovskyi"
+          href="https://www.linkedin.com/in/m-zholondkovskyi"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <CustomizedLinkedInIcon
             sx={{ color: 'var(--text-color)' }}
@@ -55,7 +55,7 @@ const Footer = () => {
         <LinkContacts
           href="https://goo.gl/maps/bZbz9wkoaYwjsyZGA"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <CustomizedLocationOnIcon />
           <span>Gorzow Wielkopolski</span>
@@ -65,6 +65,7 @@ const Footer = () => {
           <LinkContacts
             href="https://docs.google.com/document/d/1BpAMDXcbhHQGzvAJ_2ektW47OMA8ugcRC_5rkjcSaps/edit?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <CustomizedDocumentScannerIcon />
             <span>Open CV</span>

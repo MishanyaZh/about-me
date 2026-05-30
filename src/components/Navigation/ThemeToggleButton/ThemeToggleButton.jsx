@@ -23,7 +23,13 @@ const DarkModeSwitch = () => {
   }, []);
 
   return (
-    <ThemeButton onClick={toggleTheme}>
+    <ThemeButton
+      type="button"
+      onClick={toggleTheme}
+      aria-pressed={isDark}
+      aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+      title={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+    >
       {!isDark ? <MdDarkMode /> : <MdLightMode />}
     </ThemeButton>
   );
