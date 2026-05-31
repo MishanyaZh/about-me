@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
-  ALL_FILTER,
   COMMERCIAL_PROJECTS,
   FEATURED_PROJECTS,
   LEARNING_SPACE_CASE,
+  PortfolioFilter,
   PROJECTS,
 } from '../../Skills/projects';
 import FilterButtons from '../../components/Projects/FilterButtons/FilterButtons';
@@ -20,7 +20,7 @@ import { NavigationNavLink } from '../../components/Navigation/Navigation.styled
 const Portfolio = () => {
   const [portfolioView, setPortfolioView] =
     useState<PortfolioView>('commercial');
-  const [selectedFilter, setSelectedFilter] = useState(ALL_FILTER);
+  const [selectedFilter, setSelectedFilter] = useState<PortfolioFilter>('All');
 
   const baseProjects = useMemo(() => {
     if (portfolioView === 'commercial') {
@@ -34,7 +34,7 @@ const Portfolio = () => {
       return baseProjects;
     }
 
-    if (selectedFilter === ALL_FILTER) {
+    if (selectedFilter === 'All') {
       return baseProjects;
     }
 
@@ -48,7 +48,7 @@ const Portfolio = () => {
   }, []);
 
   useEffect(() => {
-    setSelectedFilter(ALL_FILTER);
+    setSelectedFilter('All');
   }, [portfolioView]);
 
   return (
@@ -60,7 +60,7 @@ const Portfolio = () => {
           onChange={setPortfolioView}
         />
       </ViewSwitcherWrapper>
-      {portfolioView === 'commercial' && (
+      {portfolioView === 'commercial' && LEARNING_SPACE_CASE && (
         <CommercialCaseCard caseData={LEARNING_SPACE_CASE} />
       )}
       {portfolioView !== 'commercial' && baseProjects.length > 0 && (
@@ -73,7 +73,7 @@ const Portfolio = () => {
       {filteredProjects.length === 0 ? (
         <EmptyState>
           {portfolioView === 'featured'
-            ? 'Featured projects list is empty. Add links in FEATURED_PROJECT_LINKS.'
+            ? 'Featured projects list is empty.'
             : 'No projects found for this selection.'}
         </EmptyState>
       ) : (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { CommercialCaseData } from '../../../Skills/projects';
 import {
   ActionsRow,
   CaseBadge,
@@ -11,16 +12,8 @@ import {
   HighlightsList,
 } from './CommercialCaseCard.styled';
 
-interface LearningSpaceCase {
-  title: string;
-  summary: string;
-  overviewLink: string;
-  platformLink: string;
-  highlights: string[];
-}
-
 interface CommercialCaseCardProps {
-  caseData: LearningSpaceCase;
+  caseData: CommercialCaseData;
 }
 
 const CommercialCaseCard = ({ caseData }: CommercialCaseCardProps) => {

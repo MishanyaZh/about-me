@@ -1,16 +1,16 @@
 import React, { MouseEvent, useEffect, useMemo, useState } from 'react';
-import { ALL_FILTER, buttonsName } from '../../../Skills/projects';
+import {
+  getVisibleTechnologyFilters,
+  PortfolioFilter,
+  PortfolioProject,
+} from '../../../Skills/projects';
 import { Box, ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { sharedToggleButtonGroupSx } from '../sharedToggleButtonSx';
 
-interface ProjectItem {
-  technologies: string;
-}
-
 interface FilterButtonsInterface {
-  onChange: (filterName: string) => void;
-  selectedFilter: string;
-  projects: ProjectItem[];
+  onChange: (filterName: PortfolioFilter) => void;
+  selectedFilter: PortfolioFilter;
+  projects: PortfolioProject[];
 }
 
 const FilterButtons = ({
@@ -20,19 +20,14 @@ const FilterButtons = ({
 }: FilterButtonsInterface) => {
   const [width, setWidth] = useState(window.outerWidth);
 
-  const visibleButtons = useMemo(
-    () =>
-      buttonsName.filter(
-        button =>
-          button === ALL_FILTER ||
-          projects.some(project => project.technologies.includes(button)),
-      ),
+  const visibleButtons: PortfolioFilter[] = useMemo(
+    () => ['All', ...getVisibleTechnologyFilters(projects)],
     [projects],
   );
 
   const handleFilterChange = (
     _: MouseEvent<HTMLElement>,
-    nextFilter: string | null,
+    nextFilter: PortfolioFilter | null,
   ) => {
     if (!nextFilter) {
       return;
