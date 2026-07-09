@@ -1,24 +1,47 @@
 import styled from '@emotion/styled';
 
 export const FrontPage = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1.2fr) minmax(
+      240px,
+      0.9fr
+    );
+  grid-template-areas: 'technical main soft';
+  align-items: stretch;
+  justify-items: center;
+
+  gap: 14px;
+  margin: 12px 12px 0;
   text-align: center;
-  align-items: center;
-  gap: 12px;
-  margin: 0 10px;
+
+  animation: fadeUp 0.75s ease both;
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @media (max-width: 766px) {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'main'
+      'technical'
+      'soft';
+    gap: 12px;
+    margin: 10px 0 0;
     padding: 0 12px;
     box-sizing: border-box;
   }
 `;
 
 export const NavLinkBox = styled.div`
-  margin-bottom: 10px;
+  margin: 18px 10px 12px;
   display: flex;
   justify-content: center;
 `;
@@ -26,14 +49,27 @@ export const NavLinkBox = styled.div`
 export const TechnicalSkills = styled.div`
   min-width: 195px;
   box-sizing: border-box;
-  order: -1;
+  grid-area: technical;
 
-  padding: 20px 10px;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  padding: 20px 14px;
+  border-radius: 18px;
   text-transform: uppercase;
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(12px);
   box-shadow: var(--box-shadow-1);
   background: var(--color-theme-card);
-  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+  transition: transform 0.22s ease, background-color 0.35s ease-out,
+    box-shadow 0.35s ease-out, border-color 0.35s ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--surface-border-strong);
+    background: var(--hover-theme-card);
+  }
 
   @media (max-width: 766px) {
     order: 0;
@@ -49,17 +85,27 @@ export const SoftSkills = styled.div`
   min-width: 195px;
   min-height: 300px;
   box-sizing: border-box;
+  grid-area: soft;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
-  padding: 20px 10px;
-  border-radius: 5px;
+  padding: 20px 14px;
+  border-radius: 18px;
   text-transform: uppercase;
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(12px);
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-1);
-  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+  transition: transform 0.22s ease, background-color 0.35s ease-out,
+    box-shadow 0.35s ease-out, border-color 0.35s ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--surface-border-strong);
+    background: var(--hover-theme-card);
+  }
 
   @media (max-width: 766px) {
     width: 100%;
@@ -75,10 +121,19 @@ export const EducationSkills = styled.div`
   padding: 20px;
   flex: 1;
 
-  border-radius: 5px;
+  border-radius: 18px;
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(12px);
   background: var(--color-theme-card);
   box-shadow: var(--box-shadow-1);
-  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
+  transition: transform 0.22s ease, background-color 0.35s ease-out,
+    box-shadow 0.35s ease-out, border-color 0.35s ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--surface-border-strong);
+    background: var(--hover-theme-card);
+  }
 `;
 
 export const ExperienceSkills = styled(EducationSkills)`
@@ -90,14 +145,19 @@ export const ExperienceSkills = styled(EducationSkills)`
   }
 `;
 
+export const MainInfoWrap = styled.div`
+  grid-area: main;
+`;
+
 export const Experience = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 12px;
+  gap: 14px;
 
   @media (max-width: 766px) {
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
 `;

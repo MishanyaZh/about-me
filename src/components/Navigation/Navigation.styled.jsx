@@ -11,54 +11,60 @@ export const Nav = styled.nav`
   justify-content: space-around;
   align-items: center;
 
-  border-radius: 5px;
-  background: var(--color-theme);
+  margin: 10px 10px 0;
+  padding: 8px 10px;
+  border-radius: 18px;
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(14px);
+  background: rgba(var(--color-theme-rgb), 0.78);
   box-shadow: var(--box-shadow-2);
 `;
 
 export const ContactLink = styled.a`
-  padding: 5px 5px;
+  padding: 7px 10px;
   color: var(--text-color);
   background: var(--color-theme-card);
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease-out;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out,
+    box-shadow 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
 
   &:hover,
   :focus {
-    border: 1px solid var(--text-acc);
+    border: 1px solid var(--surface-border-strong);
     box-shadow: var(--box-shadow-2);
-    transform: scale(1.1);
+    transform: translateY(-2px);
     color: var(--text-acc);
     background: var(--hover-theme-card);
   }
 `;
 
 export const NavigationNavLink = styled(NavLink)`
-  padding: 5px 5px;
-  border-radius: 5px;
+  padding: 7px 10px;
+  border-radius: 12px;
   text-decoration: none;
   background: var(--color-theme-card);
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--surface-border);
   color: var(--text-color);
-  transition: all 0.2s ease-out;
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out,
+    box-shadow 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
 
   &:hover,
   :focus {
     color: var(--text-acc);
     box-shadow: var(--box-shadow-2);
-    border: 1px solid var(--text-acc);
+    border: 1px solid var(--surface-border-strong);
     background: var(--hover-theme-card);
-    transform: scale(1.1);
+    transform: translateY(-2px);
   }
 
   &.active {
     color: var(--text-acc);
-    border: 1px solid var(--text-acc);
+    border: 1px solid var(--surface-border-strong);
     box-shadow: var(--box-shadow-2);
-    transform: scale(1.1);
+    transform: translateY(-2px);
     background: var(--hover-theme-card);
   }
 `;
@@ -68,7 +74,7 @@ export const Logo = styled.img`
   padding-top: 10px;
   padding-bottom: 10px;
 
-  animation: rotate 10s linear infinite;
+  animation: rotate 16s linear infinite;
   @keyframes rotate {
     from {
       transform: rotate(0deg);

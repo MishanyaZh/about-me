@@ -21,6 +21,7 @@ import {
   EducationSkills,
   ExperienceSkills,
   NavLinkBox,
+  MainInfoWrap,
 } from './Home.styled';
 import { NavigationNavLink } from '../../components/Navigation/Navigation.styled';
 
@@ -32,7 +33,9 @@ const Home = () => {
   return (
     <>
       <FrontPage>
-        <MainInfo />
+        <MainInfoWrap>
+          <MainInfo />
+        </MainInfoWrap>
 
         <TechnicalSkills>
           <SkillsList

@@ -37,10 +37,14 @@ export const FooterContacts = styled.footer`
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  padding: 10px;
-  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out;
-  border-radius: 5px;
+  margin: 0 10px 10px;
+  padding: 14px 12px;
+  transition: background-color 0.35s ease-out, box-shadow 0.35s ease-out,
+    border-color 0.35s ease-out;
+  border-radius: 18px;
+  border: 1px solid var(--surface-border);
   background: var(--color-theme-card);
+  backdrop-filter: blur(14px);
   box-shadow: var(--box-shadow-1);
   @media (max-width: 766px) {
     flex-direction: column;
@@ -53,12 +57,15 @@ export const ColumnFlexBox = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  text-align: center;
 `;
 
 export const RowFlexBox = styled.div`
   display: flex;
   flex-direction: row;
   gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const LinkContacts = styled.a`
@@ -68,9 +75,10 @@ export const LinkContacts = styled.a`
   gap: 5px;
   text-decoration: none;
   color: var(--text-color);
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
   :hover,
   :focus {
     color: var(--text-acc);
+    transform: translateY(-1px);
   }
 `;

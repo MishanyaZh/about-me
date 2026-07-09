@@ -4,79 +4,137 @@
   100% {
     text-shadow: var(--shadow-neon);
   }
+
   50% {
     text-shadow: 0 0 5px var(--text-acc), 0 0 10px var(--text-acc),
       0 0 20px var(--text-acc), 0 0 30px var(--text-color);
   }
+
   75% {
     text-shadow: 0 0 5px var(--text-color-2), 0 0 10px var(--text-color-2),
       0 0 15px var(--text-color-2), 0 0 25px var(--text-acc);
   }
 }
+
 :root {
-  --color-theme: rgb(27, 27, 27);
-  --text-color-white: #fff;
+  --color-theme: #0b1020;
+  --color-theme-rgb: 11, 16, 32;
+  --text-color-white: #f5fbff;
   --case-text-color: #fff;
-  --case-gradient-start: rgb(0, 7, 61);
-  --case-gradient-end: rgb(22, 11, 11);
-  --text-color: rgb(25, 118, 210);
-  --text-color-alpha-50: rgba(25, 118, 210, 0.5);
-  --text-color-alpha-12: rgba(25, 118, 210, 0.12);
-  --text-color-alpha-20: rgba(25, 118, 210, 0.2);
-  --text-color-2: rgb(131, 133, 143);
-  --text-acc: rgb(63, 199, 0);
-
-  --color-theme-card: rgb(22, 11, 11);
-  --hover-theme-card: rgb(0, 7, 61);
-  --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
-  --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
-
-  --shadow-neon: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff,
-    0 0 40px #00ffe1;
-
-  --animation-neonFlicker: neonFlicker 5s ease-in-out infinite alternate;
+  --case-gradient-start: #0b1020;
+  --case-gradient-end: #111a34;
+  --text-color: #8cc8ff;
+  --text-color-alpha-50: rgba(140, 200, 255, 0.5);
+  --text-color-alpha-12: rgba(140, 200, 255, 0.12);
+  --text-color-alpha-20: rgba(140, 200, 255, 0.2);
+  --text-color-2: #aeb7ca;
+  --text-acc: #70f0d3;
+  --surface-border: rgba(140, 200, 255, 0.15);
+  --surface-border-strong: rgba(112, 240, 211, 0.35);
+  --color-theme-card: rgba(14, 20, 39, 0.82);
+  --hover-theme-card: rgba(18, 27, 53, 0.94);
+  --box-shadow-1: 0px 18px 55px rgba(0, 0, 0, 0.32);
+  --box-shadow-2: 0px 14px 30px rgba(0, 0, 0, 0.34);
+  --hero-overlay: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    transparent 44%
+  );
+  --summary-surface: rgba(255, 255, 255, 0.03);
+  --shadow-neon: 0 0 8px rgba(140, 200, 255, 0.65),
+    0 0 22px rgba(112, 240, 211, 0.18);
+  --page-gradient: radial-gradient(
+      circle at top left,
+      rgba(112, 240, 211, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(140, 200, 255, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(160deg, #07111f 0%, #0b1627 48%, #050c17 100%);
+  --animation-neonFlicker: neonFlicker 8s ease-in-out infinite alternate;
 }
 
 html[data-theme='light'] {
-  --color-theme: rgb(157, 180, 207);
-  --case-text-color: rgb(18, 26, 75);
-  --case-gradient-start: rgb(124, 152, 214);
-  --case-gradient-end: rgb(208, 220, 245);
-  --text-color: rgb(18, 26, 75);
-  --text-color-alpha-50: rgba(18, 26, 75, 0.5);
-  --text-color-alpha-12: rgba(18, 26, 75, 0.12);
-  --text-color-alpha-20: rgba(18, 26, 75, 0.2);
-  --text-color-2: rgb(5, 5, 5);
-  --text-acc: rgb(185, 72, 6);
-
-  --color-theme-card: rgb(158, 165, 184);
-  --hover-theme-card: rgb(173, 190, 228);
-  --box-shadow-1: 0px 10px 60px rgba(3, 18, 150, 0.4);
-  --box-shadow-2: 5px 10px 20px rgba(4, 29, 121, 0.4);
-
-  --shadow-neon: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ffa500,
-    0 0 40px #ffb347;
+  --color-theme: #d9e7fb;
+  --color-theme-rgb: 217, 231, 251;
+  --text-color-white: #0f2a4f;
+  --case-text-color: #18375f;
+  --case-gradient-start: #b8d2f7;
+  --case-gradient-end: #f3f8ff;
+  --text-color: #173a73;
+  --text-color-alpha-50: rgba(23, 58, 115, 0.5);
+  --text-color-alpha-12: rgba(23, 58, 115, 0.12);
+  --text-color-alpha-20: rgba(23, 58, 115, 0.2);
+  --text-color-2: #2f4f7b;
+  --text-acc: #c4652f;
+  --surface-border: rgba(23, 58, 115, 0.2);
+  --surface-border-strong: rgba(196, 101, 47, 0.38);
+  --color-theme-card: rgba(255, 255, 255, 0.84);
+  --hover-theme-card: rgba(255, 255, 255, 0.96);
+  --box-shadow-1: 0px 20px 48px rgba(17, 52, 105, 0.2);
+  --box-shadow-2: 0px 14px 34px rgba(17, 52, 105, 0.24);
+  --hero-overlay: linear-gradient(
+    180deg,
+    rgba(23, 58, 115, 0.08),
+    rgba(255, 255, 255, 0.12) 52%,
+    transparent 100%
+  );
+  --summary-surface: rgba(255, 255, 255, 0.6);
+  --shadow-neon: 0 0 10px rgba(23, 58, 115, 0.22),
+    0 0 20px rgba(196, 101, 47, 0.14);
+  --page-gradient: radial-gradient(
+      circle at 8% 10%,
+      rgba(57, 128, 226, 0.35),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 88% 14%,
+      rgba(196, 101, 47, 0.18),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 56% 100%,
+      rgba(36, 104, 196, 0.18),
+      transparent 40%
+    ),
+    linear-gradient(160deg, #e8f1ff 0%, #dfeaff 52%, #f5f9ff 100%);
 }
-/* default theme = 'dark' */
+
 html[data-theme='dark'] {
-  --color-theme: rgb(27, 27, 27);
+  --color-theme: #0b1020;
+  --color-theme-rgb: 11, 16, 32;
   --case-text-color: #fff;
-  --case-gradient-start: rgb(0, 7, 61);
-  --case-gradient-end: rgb(22, 11, 11);
-  --text-color: rgb(25, 118, 210);
-  --text-color-alpha-50: rgba(25, 118, 210, 0.5);
-  --text-color-alpha-12: rgba(25, 118, 210, 0.12);
-  --text-color-alpha-20: rgba(25, 118, 210, 0.2);
-  --text-color-2: rgb(131, 133, 143);
-  --text-acc: rgb(63, 199, 0);
-
-  --color-theme-card: rgb(22, 11, 11);
-  --hover-theme-card: rgb(0, 7, 61);
-  --box-shadow-1: 0px 10px 60px rgba(0, 62, 248, 0.2);
-  --box-shadow-2: 5px 10px 20px rgba(0, 63, 252, 0.4);
-
-  --shadow-neon: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff,
-    0 0 40px #00ffe1;
+  --case-gradient-start: #0b1020;
+  --case-gradient-end: #111a34;
+  --text-color: #8cc8ff;
+  --text-color-alpha-50: rgba(140, 200, 255, 0.5);
+  --text-color-alpha-12: rgba(140, 200, 255, 0.12);
+  --text-color-alpha-20: rgba(140, 200, 255, 0.2);
+  --text-color-2: #aeb7ca;
+  --text-acc: #70f0d3;
+  --surface-border: rgba(140, 200, 255, 0.15);
+  --surface-border-strong: rgba(112, 240, 211, 0.35);
+  --color-theme-card: rgba(14, 20, 39, 0.82);
+  --hover-theme-card: rgba(18, 27, 53, 0.94);
+  --box-shadow-1: 0px 18px 55px rgba(0, 0, 0, 0.32);
+  --box-shadow-2: 0px 14px 30px rgba(0, 0, 0, 0.34);
+  --shadow-neon: 0 0 8px rgba(140, 200, 255, 0.65),
+    0 0 22px rgba(112, 240, 211, 0.18);
+  --page-gradient: radial-gradient(
+      circle at top left,
+      rgba(112, 240, 211, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(140, 200, 255, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(160deg, #07111f 0%, #0b1627 48%, #050c17 100%);
+  --animation-neonFlicker: neonFlicker 8s ease-in-out infinite alternate;
 }
 
 html {
@@ -85,14 +143,17 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--color-theme);
+  background: var(--page-gradient);
+  background-attachment: fixed;
   color: var(--text-color);
-  transition: background-color 0.35s ease-out, color 0.35s ease-out;
+  transition: background-color 0.35s ease-out, color 0.35s ease-out,
+    background 0.35s ease-out;
+  min-height: 100vh;
 }
 
 code {
@@ -118,6 +179,16 @@ h3,
 h4,
 h5 {
   margin: 0;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--text-color-alpha-20);
+  color: var(--text-color-white);
 }
 
 @media (prefers-reduced-motion: reduce) {
