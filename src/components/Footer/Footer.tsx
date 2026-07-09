@@ -77,7 +77,7 @@ const Footer = () => {
 
         <RowFlexBox>
           <LinkContacts
-            href="https://docs.google.com/document/d/1BpAMDXcbhHQGzvAJ_2ektW47OMA8ugcRC_5rkjcSaps/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1x69LgErPHNjRCmxCOtkGNRB01FDkyzxSc_IWuvUOhec/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -85,10 +85,7 @@ const Footer = () => {
             <span>Open CV</span>
           </LinkContacts>
 
-          <LinkContacts
-            href="/Mykhailo_Zholondkovskyi_Frontend_React_dev.pdf"
-            download
-          >
+          <LinkContacts href="/Zholondkovskyi_React_CV.pdf" download>
             <CustomizedPictureAsPdfIcon />
             <span>Download CV</span>
           </LinkContacts>
